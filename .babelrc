@@ -1,0 +1,19 @@
+{
+  "presets": ["next/babel"],
+  "plugins": [
+    ["styled-components", { "ssr": true }],
+    "react-require",
+    "inline-react-svg",
+    [
+      "module-resolver",
+      {
+        "root": ["."],
+        "alias": {
+          "~components": "./src/components",
+          "~lib": "./src/lib",
+          "~icons": "./src/icons"
+        }
+      }
+    ]
+  ]
+}

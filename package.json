@@ -1,0 +1,41 @@
+{
+  "name": "anastate",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "now-build": "next build && next export -o dist",
+    "deploy": "now --target production",
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "@zeit/next-css": "^1.0.1",
+    "babel-plugin-react-require": "^3.1.1",
+    "lodash": "^4.17.15",
+    "next": "^9.1.4",
+    "next-react-svg": "^1.1.0",
+    "normalize.css": "^8.0.1",
+    "prettier": "^1.19.1",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "styled-breakpoints": "^7.1.0",
+    "styled-components": "^4.4.1",
+    "styled-icons": "^9.0.1"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.0.3",
+    "babel-plugin-inline-react-svg": "^1.1.0",
+    "babel-plugin-module-resolver": "^3.2.0",
+    "babel-plugin-styled-components": "^1.10.6",
+    "eslint": "^6.7.1",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-import-resolver-alias": "^1.1.2",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-prettier": "^3.1.1",
+    "eslint-plugin-react": "^7.16.0",
+    "eslint-plugin-react-hooks": "^1.7.0"
+  },
+  "license": "ISC"
+}

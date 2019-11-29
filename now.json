@@ -1,0 +1,6 @@
+{
+  "name": "anastate",
+  "version": 2,
+  "alias": ["preview.anastate.com"],
+  "builds": [{ "src": "package.json", "use": "@now/static-build" }]
+}
