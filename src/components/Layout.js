@@ -44,6 +44,6 @@ const Container = styled.main`
   flex-grow: 1;
 
   ${down('sm')} {
-    margin-top: 5rem;
+    margin-top: 0;
   }
 `

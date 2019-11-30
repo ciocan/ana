@@ -3,22 +3,7 @@ import styled from 'styled-components'
 import { down } from 'styled-breakpoints'
 import Arrow from '~icons/arrow-down.svg'
 
-export const IconContainer = styled.div`
-  display: flex;
-  flex-direction: row;
-  align-self: flex-start;
-  min-width: 200px;
-  display: flex;
-
-  ${down('lg')} {
-    display: none;
-  }
-`
-
-export const HomeContainer = styled.div`
-  display: flex;
-  justify-content: space-between;
-`
+export const HomeContainer = styled.div``
 
 export const TextContainer = styled.div`
   width: 860px;
@@ -30,19 +15,8 @@ export const TextContainer = styled.div`
 `
 
 export const Description = styled.p`
-  font-size: 48px;
-  line-height: 74px;
-  color: #ffffff;
-
-  ${down('lg')} {
-    font-size: 36px;
-    line-height: 54px;
-  }
-
-  ${down('sm')} {
-    font-size: 28px;
-    line-height: 42px;
-  }
+  font-size: 3vmax;
+  letter-spacing: 0.2em;
 `
 
 export const B = styled.span`
@@ -57,7 +31,9 @@ export const Explore = styled.span`
   border: 2px solid white;
 
   ${down('sm')} {
+    display: flex;
     padding: 20px;
+    justify-content: space-between;
   }
 `
 

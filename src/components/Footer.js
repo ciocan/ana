@@ -20,7 +20,11 @@ export const Footer = () => (
         <Text>
           <h1>Resume</h1>
           <Links>
-            <a href="https://www.linkedin.com/in/anastate/" rel="noopener noreferrer" target="_blank">
+            <a
+              href="https://www.linkedin.com/in/anastate/"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
               <LinkedinIcon />
             </a>
             <a href="Ana_State_Resume_UX_UI_Designer_2019.pdf" target="_blank">
@@ -36,7 +40,6 @@ export const Footer = () => (
 const ContactContainer = styled.div`
   display: flex;
   justify-content: space-between;
-  width: 100%;
 `
 
 const Text = styled.div`
@@ -59,7 +62,7 @@ const Text = styled.div`
     line-height: 20px;
 
     ${down('sm')} {
-      font-size: 18px;
+      font-size: 16px;
     }
   }
 `

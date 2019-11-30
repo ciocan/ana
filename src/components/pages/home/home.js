@@ -1,20 +1,17 @@
 import React from 'react'
 import { Content, Headline, Subhead } from '~components/content'
 import { Layout } from '~components/Layout'
-import LandingIcon from '~icons/landing-icon.svg'
 import { Project } from './project'
 import Project1 from './images/project1.svg'
 import Project2 from './images/project2.svg'
 
 import {
   HomeContainer,
-  TextContainer,
   Explore,
   ExploreText,
   ArrowIcon,
   Description,
   B,
-  IconContainer,
   Projects,
   Title,
 } from './styles'
@@ -23,17 +20,12 @@ export default () => (
   <Layout>
     <Content>
       <HomeContainer>
-        <TextContainer>
-          <Headline>Ana State </Headline>
-          <Subhead> Multidisciplinary Designer </Subhead>
-          <Description>
-            I’m a <B> digital designer </B> who works at the intersection of UX|UI , business,
-            engineering, & human psychology to build web & mobile products.{' '}
-          </Description>
-        </TextContainer>
-        <IconContainer>
-          <LandingIcon />
-        </IconContainer>
+        <Headline>Ana State </Headline>
+        <Subhead>Multi-disciplinary Designer</Subhead>
+        <Description>
+          I’m a <B> digital designer </B> who works at the intersection of UX|UI, business,
+          engineering and human psychology to build web & mobile products.
+        </Description>
       </HomeContainer>
       <Explore>
         <ExploreText>Explore projects </ExploreText>

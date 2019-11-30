@@ -40,10 +40,17 @@ export default class MyDocument extends Document {
               margin: 0;
               padding: 0;
               box-sizing: border-box;
+              font-size: 100%;
             }
           `}</style>
-          <script async={true} src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`} />
-          <link href="//fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet" />
+          <script
+            async={true}
+            src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
+          />
+          <link
+            href="//fonts.googleapis.com/css?family=Montserrat:400,700&display=swap"
+            rel="stylesheet"
+          />
           <script
             dangerouslySetInnerHTML={{
               __html: `
