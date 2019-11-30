@@ -3,7 +3,14 @@ import styled from 'styled-components'
 import { down } from 'styled-breakpoints'
 import Arrow from '~icons/arrow-down.svg'
 
-export const HomeContainer = styled.div``
+export const HomeContainer = styled.div`
+  max-width: 1400px;
+  padding: 40px;
+
+  ${down('sm')} {
+    padding: 20px;
+  }
+`
 
 export const TextContainer = styled.div`
   width: 860px;
@@ -74,7 +81,7 @@ export const Title = styled.h1`
   margin-bottom: 80px;
 
   ${down('sm')} {
-    font-size: 24px;
+    font-size: 22px;
     line-height: 24px;
   }
 `

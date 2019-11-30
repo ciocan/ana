@@ -51,7 +51,10 @@ const IconContainer = styled.div`
 
   ${down('sm')} {
     padding: 20px;
-    overflow: visible;
+
+    svg {
+      height: 80vw;
+    }
   }
 `
 
@@ -118,7 +121,7 @@ const Content = styled.p`
 const Link = styled.a`
   display: flex;
   font-weight: bold;
-  font-size: 32px;
+  font-size: 28px;
   display: flex;
   align-items: center;
   letter-spacing: 0.16em;
@@ -126,6 +129,18 @@ const Link = styled.a`
   color: #070e55;
   text-decoration: none;
   margin-top: auto;
+
+  svg {
+    height: 60%;
+  }
+
+  ${down('lg')} {
+    font-size: 28px;
+
+    svg {
+      height: 22px;
+    }
+  }
 
   ${down('sm')} {
     color: #fff;

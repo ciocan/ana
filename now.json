@@ -2,5 +2,8 @@
   "name": "anastate",
   "version": 2,
   "alias": ["anastate.com", "www.anastate.com", "preview.anastate.com"],
-  "builds": [{ "src": "package.json", "use": "@now/static-build" }]
+  "builds": [{ "src": "package.json", "use": "@now/static-build" }],
+  "github": {
+    "autoAlias": false
+  }
 }

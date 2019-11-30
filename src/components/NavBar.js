@@ -1,6 +1,7 @@
 import { withRouter } from 'next/router'
 import React, { useEffect } from 'react'
 import styled from 'styled-components'
+import { down } from 'styled-breakpoints'
 import * as gtag from '~lib/gtag'
 import { NavItem } from './NavBarItem'
 
@@ -40,4 +41,8 @@ const List = styled.ul`
   width: 100%;
   padding: 20px 40px;
   justify-content: flex-end;
+
+  ${down('sm')} {
+    padding: 20px;
+  }
 `
