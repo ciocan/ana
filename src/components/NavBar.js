@@ -33,6 +33,9 @@ export const NavBar = withRouter(_NavBar)
 
 const Nav = styled.nav`
   display: flex;
+  ${down('sm')} {
+    margin-top: -20px;
+  }
 `
 
 const List = styled.ul`
@@ -44,5 +47,6 @@ const List = styled.ul`
 
   ${down('sm')} {
     padding: 20px;
+    align-items: center;
   }
 `

@@ -28,6 +28,7 @@ export const Content = styled.div`
   padding-bottom: 0.5rem;
   margin: 0;
   box-sizing: border-box;
+  /* border: 1px solid red; */
 
   ${({ padding }) => padding && `padding: ${padding}`};
   ${({ margin }) => margin && `margin: ${margin}`};
@@ -35,6 +36,7 @@ export const Content = styled.div`
   ${down('md')} {
     padding: 40px;
     width: 100%;
+    /* border: 1px solid green; */
   }
 
   ${down('sm')} {

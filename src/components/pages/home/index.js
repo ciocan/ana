@@ -19,7 +19,7 @@ import {
 export default () => (
   <Layout>
     <HomeContainer>
-      <Headline>Ana State </Headline>
+      <Headline>Ana State</Headline>
       <Subhead>Multi-disciplinary Designer</Subhead>
       <Description>
         I’m a <B> digital designer </B> who works at the intersection of UX|UI, business,

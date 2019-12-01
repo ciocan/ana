@@ -12,15 +12,6 @@ export const HomeContainer = styled.div`
   }
 `
 
-export const TextContainer = styled.div`
-  width: 860px;
-  margin-right: 40px;
-
-  ${down('lg')} {
-    margin-right: 0;
-  }
-`
-
 export const Description = styled.p`
   font-size: 3vmax;
   letter-spacing: 0.2em;

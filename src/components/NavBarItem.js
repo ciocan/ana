@@ -8,7 +8,8 @@ export const NavItem = ({ text, path, isSelected, extra }) => (
   <ListItem extra={extra}>
     <Link href={path} as={path}>
       <A href={path} isSelected={isSelected} extra={extra}>
-        {text}
+        {extra && extra.icon}
+        <span>{text}</span>
       </A>
     </Link>
   </ListItem>
@@ -18,6 +19,7 @@ const ListItem = styled.li`
   margin-left: ${({ extra }) => (get(extra, 'isHome') ? 0 : '40px')};
 `
 const A = styled.a`
+  display: flex;
   color: black;
   text-decoration: none;
   text-transform: uppercase;
@@ -32,7 +34,26 @@ const A = styled.a`
       font-size: 64px;
 
       ${down('sm')} {
+        display: inline-block;
         font-size: 36px;
+      }
+    `}
+
+  ${({ extra }) =>
+    get(extra, 'icon') &&
+    css`
+      & svg {
+        display: none;
+      }
+
+      ${down('sm')} {
+        & span {
+          display: none;
+        }
+
+        & svg {
+          display: block;
+        }
       }
     `}
 
