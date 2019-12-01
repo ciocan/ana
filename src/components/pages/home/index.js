@@ -1,28 +1,18 @@
 import React from 'react'
-import { Content, Headline, Subhead } from '~components/content'
+import { Content, Headline } from '~components/content'
 import { Layout } from '~components/Layout'
 import { Project } from './project'
 import Project1 from './images/project1.svg'
 import Project2 from './images/project2.svg'
 
-import {
-  HomeContainer,
-  Explore,
-  ExploreText,
-  ArrowIcon,
-  Description,
-  B,
-  Projects,
-  Title,
-} from './styles'
+import { HomeContainer, Explore, ExploreText, ArrowIcon, Description, B, Projects } from './styles'
 
 export default () => (
   <Layout>
     <HomeContainer>
-      <Headline>Ana State</Headline>
-      <Subhead>Multi-disciplinary Designer</Subhead>
+      <Headline>Hey, I'm Ana!</Headline>
       <Description>
-        I’m a <B> digital designer </B> who works at the intersection of UX|UI, business,
+        A <B>multi-disciplinary designer</B> who works at the intersection of UX|UI, business,
         engineering and human psychology to build web & mobile products.
       </Description>
     </HomeContainer>
@@ -32,7 +22,6 @@ export default () => (
         <ArrowIcon />
       </Explore>
       <Projects>
-        <Title>Selected Projects</Title>
         <Project
           icon={<Project1 />}
           color="#44AB96"

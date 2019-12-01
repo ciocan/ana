@@ -6,10 +6,12 @@ export const Container = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 40px;
+  margin-bottom: 160px;
 
   ${down('md')} {
     grid-template-columns: 1fr;
     grid-gap: 0;
+    margin-bottom: 120px;
   }
 `
 

@@ -5,17 +5,8 @@ export const Headline = styled.h1`
   font-style: normal;
   font-weight: bold;
   font-size: 7vmin;
-  line-height: 0.5em;
-  letter-spacing: 0.05em;
-  display: flex;
-  align-items: center;
-`
-
-export const Subhead = styled.h1`
-  font-style: normal;
-  font-weight: normal;
-  font-size: 5vmin;
-  letter-spacing: 0.1em;
+  line-height: 0.9em;
+  letter-spacing: 0.04em;
   display: flex;
   align-items: center;
 `

@@ -41,8 +41,9 @@ export default () => (
           title='I’M A KEEN TO UNDERSTAND THE “WHY”,” HOW” AND 
 “WHAT" BEFORE DESIGNING'
         >
-          Never attribute to malice that which is adequately explained by stupidity. Never attribute
-          to malice that which is adequately explained by stupidity.
+          What problem are we solving? Why are we solving this issue? How can storytelling foster
+          empathy between diverse teams? I enjoy getting closer to the answers through collaboration
+          with people from various disciplines.
         </DesignPrinciple>
         <DesignPrinciple chapter="D" title='I LOVE TO TRAIN MY "BRAIN MUSCLES"'>
           This means I approach problem-solving both creatively and constructively. Getting out of

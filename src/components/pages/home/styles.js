@@ -14,7 +14,7 @@ export const HomeContainer = styled.div`
 
 export const Description = styled.p`
   font-size: 3vmax;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.1em;
 `
 
 export const B = styled.span`
@@ -54,10 +54,10 @@ export const ArrowIcon = styled(Arrow)`
 `
 
 export const Projects = styled.div`
-  margin-top: 360px;
+  margin-top: 120px;
 
   ${down('sm')} {
-    margin-top: 80px;
+    margin-top: 100px;
   }
 `
 
