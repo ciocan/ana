@@ -57,7 +57,6 @@ export const Chapter = styled.h3`
 `
 
 export const Process = styled.div`
-  /* border: 1px solid red; */
   margin-top: 80px;
   display: flex;
   flex-direction: column;
