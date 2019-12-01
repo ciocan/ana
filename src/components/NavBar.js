@@ -33,8 +33,10 @@ export const NavBar = withRouter(_NavBar)
 
 const Nav = styled.nav`
   display: flex;
+
   ${down('sm')} {
-    margin-top: -20px;
+    height: 80px;
+    margin-bottom: 60px;
   }
 `
 
