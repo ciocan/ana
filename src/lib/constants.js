@@ -13,11 +13,11 @@ export const navigationPages = [
     path: '/',
     extra: { gridArea: 'logo', isHome: true, justifySelf: 'left' },
   },
-  // {
-  //   text: 'Work',
-  //   path: '/work',
-  //   extra: { gridArea: 'work', justifySelf: 'right' },
-  // },
+  {
+    text: 'Work',
+    path: '/work',
+    extra: { gridArea: 'work', justifySelf: 'right' },
+  },
   {
     text: 'About',
     path: '/about',

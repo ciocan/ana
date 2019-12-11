@@ -19,7 +19,6 @@ export const Content = styled.div`
   padding-bottom: 0.5rem;
   margin: 0;
   box-sizing: border-box;
-  /* border: 1px solid red; */
 
   ${({ padding }) => padding && `padding: ${padding}`};
   ${({ margin }) => margin && `margin: ${margin}`};

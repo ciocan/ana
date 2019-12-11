@@ -18,7 +18,7 @@ export default () => (
     </HomeContainer>
     <Content>
       <Explore>
-        <ExploreText>Explore projects </ExploreText>
+        <ExploreText>Explore projects</ExploreText>
         <ArrowIcon />
       </Explore>
       <Projects>
@@ -26,8 +26,9 @@ export default () => (
           icon={<Project1 />}
           color="#44AB96"
           title="Smart Mobile Banking"
-          year="2018"
+          year="2019"
           type="Mobile App"
+          link="/work"
         >
           Rethinking the onboarding mobile experience of a secure banking app used to sign &
           authorize transactions.
@@ -37,22 +38,23 @@ export default () => (
           icon={<Project2 />}
           color="#F2C53B"
           title="Sales meets Research & Data Science"
-          year="2018"
+          year="2019"
           type="Research"
+          link="/work"
         >
-          Rethinking the onboarding mobile experience of a secure banking app used to sign &
-          authorize transactions.
+          Leverage UX Research and Analytics to build better tools for a more effective
+          cross-selling process.
         </Project>
 
         <Project
           icon={<Project2 />}
           color="#4484AB"
-          title="Smart Mobile Banking"
+          title="Ink Tank"
           year="2018"
           type="Research"
+          link="/work"
         >
-          Rethinking the onboarding mobile experience of a secure banking app used to sign &
-          authorize transactions.
+          Help tattoo seekers find the right artist.
         </Project>
       </Projects>
     </Content>
