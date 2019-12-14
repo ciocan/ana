@@ -33,6 +33,7 @@ export const Footer = () => (
           </Links>
         </Text>
       </ContactContainer>
+      <Copy>&copy; Ana State 2019</Copy>
     </Container>
   </a>
 )
@@ -42,6 +43,11 @@ const ContactContainer = styled.div`
   justify-content: space-between;
   width: 100%;
   max-width: 1000px;
+  margin-bottom: 50px;
+
+  ${down('sm')} {
+    margin-bottom: 30px;
+  }
 `
 
 const Text = styled.div`
@@ -83,9 +89,11 @@ const Container = styled.footer`
   color: #2f4858;
   padding: 20px;
   flex-shrink: 0;
+  padding-bottom: 50px;
 
   ${down('sm')} {
     margin-top: 5rem;
+    padding-bottom: 30px;
   }
 `
 
@@ -118,4 +126,12 @@ const LinkedinIcon = styled(LinkedinSquare)`
 const PdfIcon = styled(FilePdf)`
   width: 42px;
   color: #2f4858;
+`
+
+const Copy = styled.p`
+  font-weight: bold;
+
+  ${down('sm')} {
+    font-size: 12px;
+  }
 `
