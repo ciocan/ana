@@ -1,0 +1,23 @@
+{
+  "name": "Ana State",
+  "short_name": "Ana State",
+  "description": "Ana State personal website",
+  "scope": ".",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "theme_color": "#2F4858",
+  "background_color": "#2F4858",
+  "icons": [
+    {
+      "src": "/ana.png",
+      "sizes": "256x256",
+      "type": "image/png"
+    },
+    {
+      "src": "/ana-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

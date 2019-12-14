@@ -51,6 +51,12 @@ export default class MyDocument extends Document {
             href="//fonts.googleapis.com/css?family=Montserrat:400,700&display=swap"
             rel="stylesheet"
           />
+          <link rel="manifest" href="/manifest.json" />
+          <link rel="icon" sizes="256x256" href="/ana.png" />
+          <link rel="apple-touch-icon" href="/ana.png" />
+          <meta name="theme-color" content="#2F4858" />
+          <link rel="apple-touch-startup-image" href="/ana.png" />
+
           <script
             dangerouslySetInnerHTML={{
               __html: `

@@ -1,7 +1,12 @@
 module.exports = {
   root: true,
   parser: 'babel-eslint',
-  extends: ['eslint:recommended', 'plugin:react/recommended', 'plugin:import/errors', 'plugin:import/warnings'],
+  extends: [
+    'eslint:recommended',
+    'plugin:react/recommended',
+    'plugin:import/errors',
+    'plugin:import/warnings',
+  ],
   rules: {
     'react/prop-types': 0,
     'no-console': 'off',
@@ -32,5 +37,9 @@ module.exports = {
     react: {
       version: 'detect',
     },
+  },
+  env: {
+    browser: true,
+    node: true,
   },
 }
