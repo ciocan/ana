@@ -40,6 +40,8 @@ export const Footer = () => (
 const ContactContainer = styled.div`
   display: flex;
   justify-content: space-between;
+  width: 100%;
+  max-width: 1000px;
 `
 
 const Text = styled.div`

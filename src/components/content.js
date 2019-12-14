@@ -26,7 +26,6 @@ export const Content = styled.div`
   ${down('md')} {
     padding: 40px;
     width: 100%;
-    /* border: 1px solid green; */
   }
 
   ${down('sm')} {
