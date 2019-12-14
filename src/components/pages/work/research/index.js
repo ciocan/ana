@@ -4,14 +4,13 @@ import { Content } from '~components/content'
 import Persona1 from './images/persona1.png'
 import Persona2 from './images/persona2.png'
 import Storyboard from './images/storyboard.png'
-
+import { ProjectImage } from './styles'
 import {
   Intro,
   Headline,
   Title,
   Subtitle,
   Illustration,
-  ProjectImage,
   Box,
   Column,
   Text,
@@ -19,7 +18,7 @@ import {
   No,
   Image,
   Foot,
-} from './styles'
+} from '~components/pages/work/common'
 
 export default () => (
   <Layout>
@@ -43,7 +42,15 @@ export default () => (
         <Column>
           <Title>Team</Title>
           <Text>
-            UX Designer Product owner UX Researcher Data - science engineers Solution architect ​
+            UX Designer
+            <br />
+            Product owner
+            <br />
+            UX Researcher
+            <br />
+            Data - science engineers
+            <br />
+            Solution architect ​
           </Text>
         </Column>
         <Column>

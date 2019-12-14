@@ -2,7 +2,6 @@ import React from 'react'
 import styled, { css } from 'styled-components'
 import FullscreenImage from '~components/FullscreenImage'
 import { up, down } from 'styled-breakpoints'
-import Project2 from '~components/pages/work/sales/images/project.svg'
 
 export const Intro = styled.div`
   background-color: ${props => props.color};
@@ -33,11 +32,6 @@ export const Illustration = styled.div`
   ${down('md')} {
     display: none;
   }
-`
-
-export const ProjectImage = styled(Project2)`
-  width: 480px;
-  height: 480px;
 `
 
 export const Headline = styled.h1`

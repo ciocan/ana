@@ -76,3 +76,7 @@ export const Title = styled.h1`
     line-height: 24px;
   }
 `
+
+export const Image = styled.img`
+  width: 360px;
+`
