@@ -4,10 +4,10 @@ import Link from 'next/link'
 import styled, { css } from 'styled-components'
 import { down } from 'styled-breakpoints'
 
-export const NavItem = ({ text, path, isSelected, extra }) => (
+export const NavItem = ({ text, name, path, isSelected, extra }) => (
   <ListItem extra={extra}>
     <Link href={path} as={path}>
-      <A href={path} isSelected={isSelected} extra={extra}>
+      <A href={path} isSelected={isSelected} extra={extra} aria-label={name}>
         {extra && extra.icon}
         <span>{text}</span>
       </A>

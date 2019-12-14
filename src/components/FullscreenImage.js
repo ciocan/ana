@@ -1,14 +1,14 @@
 import React, { useState, useCallback } from 'react'
 import styled, { css } from 'styled-components'
 
-function FullscreenImage({ src, className }) {
+function FullscreenImage({ src, className, alt }) {
   const [fullscreen, setFullscreen] = useState(false)
 
   const toggleFullscreen = useCallback(() => setFullscreen(!fullscreen), [fullscreen])
 
   return (
     <Container fullscreen={fullscreen} onClick={toggleFullscreen} className={className}>
-      <Img src={src} />
+      <Img src={src} alt={alt} />
     </Container>
   )
 }

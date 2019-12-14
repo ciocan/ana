@@ -24,10 +24,15 @@ export const Footer = () => (
               href="https://www.linkedin.com/in/anastate/"
               rel="noopener noreferrer"
               target="_blank"
+              aria-label="Linkedin Profile"
             >
               <LinkedinIcon />
             </a>
-            <a href="Ana_State_Resume_UX_UI_Designer_2019.pdf" target="_blank">
+            <a
+              href="Ana_State_Resume_UX_UI_Designer_2019.pdf"
+              target="_blank"
+              aria-label="PDF Resume"
+            >
               <PdfIcon />
             </a>
           </Links>
