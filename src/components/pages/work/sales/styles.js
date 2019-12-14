@@ -1,5 +1,6 @@
 import React from 'react'
 import styled, { css } from 'styled-components'
+import FullscreenImage from '~components/FullscreenImage'
 import { up, down } from 'styled-breakpoints'
 import Project2 from '~components/pages/work/sales/images/project.svg'
 
@@ -126,9 +127,7 @@ export const No = styled.p`
   margin: 0;
 `
 
-export const Img = styled.img`
-  position: relative;
-  width: 100%;
+export const Image = styled(FullscreenImage)`
   margin-bottom: 30px;
 `
 

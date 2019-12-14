@@ -17,7 +17,7 @@ import {
   Text,
   Section,
   No,
-  Img,
+  Image,
   Foot,
 } from './styles'
 
@@ -143,15 +143,15 @@ export default () => (
         <div>
           <Title>User Personas</Title>
           <Text>We narrowed down the Personas to two as it can be seen below:</Text>
-          <Img src={Persona1} />
-          <Img src={Persona2} />
+          <Image src={Persona1} />
+          <Image src={Persona2} />
           <Title>Storyboard</Title>
           <Text>
             In order to capture in a more realistic way the cross-selling process, I built a
             storyboard. This helped the team to be on the same page and have the same understanding
             of the process.
           </Text>
-          <Img src={Storyboard} />
+          <Image src={Storyboard} />
         </div>
       </Section>
 
