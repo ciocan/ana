@@ -1,6 +1,6 @@
 import React from 'react'
 import { Layout } from '~components/Layout'
-import { Content } from '~components/content'
+import { Content, NextProject } from '~components/content'
 import Persona1 from './images/persona1.png'
 import Persona2 from './images/persona2.png'
 import Storyboard from './images/storyboard.png'
@@ -224,6 +224,7 @@ export default () => (
           </Text>
         </div>
       </Section>
+      <NextProject to="/work/inktank" />
     </Content>
   </Layout>
 )

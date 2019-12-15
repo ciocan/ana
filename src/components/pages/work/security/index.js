@@ -1,6 +1,6 @@
 import React from 'react'
 import { Layout } from '~components/Layout'
-import { Content } from '~components/content'
+import { Content, NextProject } from '~components/content'
 import Avatar from './images/avatar.svg'
 import Understanding from './images/understanding.png'
 import Persona1 from './images/persona1.png'
@@ -42,7 +42,6 @@ export default () => (
           solution within a mobile banking app.
         </Subtitle>
       </Intro>
-
       <Box>
         <Column>
           <Title>Timeline</Title>
@@ -77,7 +76,6 @@ export default () => (
           </Text>
         </Column>
       </Box>
-
       <Section light>
         <Headline size="36">
           <No>01.</No>The Problem
@@ -101,7 +99,6 @@ export default () => (
           </Foot>
         </div>
       </Section>
-
       <ListContainer>
         <Headline>Desired Business Outcomes</Headline>
         <List left color="#44ab96">
@@ -125,7 +122,6 @@ export default () => (
           </Column>
         </List>
       </ListContainer>
-
       <ListContainer right>
         <Headline>Challenges</Headline>
         <List right color="#F2C53B">
@@ -151,7 +147,6 @@ export default () => (
           </Column>
         </List>
       </ListContainer>
-
       <Section>
         <Headline size="36">
           <No>02.</No>My Role
@@ -194,7 +189,6 @@ export default () => (
           </Row>
         </div>
       </Section>
-
       <Section light>
         <Headline size="36">
           <No>03.</No>User Research
@@ -212,7 +206,6 @@ export default () => (
           <Image src={Understanding} />
         </div>
       </Section>
-
       <Section>
         <Headline size="36">
           <No>04.</No>Understanding the user
@@ -256,7 +249,6 @@ export default () => (
           </Text>
         </div>
       </Section>
-
       <Section light>
         <Headline size="36">Design Challenge</Headline>
         <div>
@@ -270,7 +262,6 @@ export default () => (
           <Image src={Challenge} alt="Design Challenge" />
         </div>
       </Section>
-
       <Section>
         <Headline size="36">
           <No>05.</No>Design Sprint Proces
@@ -313,7 +304,6 @@ export default () => (
           <Image src={UserFlow} alt="User Flow" />
         </div>
       </Section>
-
       <Section>
         <Headline size="36">
           <No>06.</No>Usability Testing Takeaways & Solutions
@@ -361,7 +351,6 @@ export default () => (
           </Text>
         </div>
       </Section>
-
       <Section light>
         <Headline size="36">LESSONS LEARNED</Headline>
         <div>
@@ -402,6 +391,7 @@ export default () => (
           </Text>
         </div>
       </Section>
+      <NextProject to="/work/research" />
     </Content>
   </Layout>
 )

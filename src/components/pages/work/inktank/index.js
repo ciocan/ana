@@ -1,6 +1,6 @@
 import React from 'react'
 import { Layout } from '~components/Layout'
-import { Content } from '~components/content'
+import { Content, NextProject } from '~components/content'
 import ProjectImage from './images/inktank.png'
 
 import { Image, ImageContainer } from './styles'
@@ -97,6 +97,7 @@ export default () => (
           </Text>
         </div>
       </Section>
+      <NextProject to="/work/security" />
     </Content>
   </Layout>
 )
