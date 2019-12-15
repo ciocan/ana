@@ -38,7 +38,7 @@ export const Headline = styled.h1`
   font-family: Georgia;
   font-style: normal;
   font-weight: bold;
-  font-size: 44px;
+  font-size: ${({ size }) => (size ? '44px' : size)};
   line-height: 44px;
   align-items: center;
   margin-bottom: 40px;
@@ -61,7 +61,18 @@ export const Subtitle = styled.h2`
   }
 `
 
-export const Title = styled.h2``
+export const Title = styled.h2`
+  ${({ spaced }) =>
+    spaced &&
+    css`
+      padding: 40px;
+      padding-bottom: 0;
+
+      ${down('sm')} {
+        padding: 0px;
+      }
+    `}
+`
 
 export const Text = styled.p`
   font-weight: ${({ isBold }) => (isBold ? 'bold' : 'normal')};
@@ -87,7 +98,38 @@ export const Box = styled.div`
   }
 `
 
-export const Column = styled.div``
+export const Column = styled.div`
+  ${({ light }) =>
+    light &&
+    css`
+      background: #f1f1e6;
+      color: #070e55;
+      padding: 0px;
+
+      ${down('sm')} {
+        padding: 20px;
+        padding-bottom: 0;
+      }
+
+      ${Text} {
+        text-transform: uppercase;
+        font-size: 0.85rem;
+        line-height: 1.3rem;
+      }
+    `}
+
+  ${({ blue }) =>
+    blue &&
+    css`
+      background: #85a5f5;
+      color: #ffffff;
+      padding: 20px;
+
+      ${down('sm')} {
+        margin-bottom: 20px;
+      }
+    `}
+`
 
 export const Section = styled.div`
   display: grid;
