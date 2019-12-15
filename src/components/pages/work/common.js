@@ -131,3 +131,68 @@ export const Foot = styled.div`
   border-top: 1px solid #070e55;
   padding-top: 30px;
 `
+
+export const List = styled.div`
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+
+  grid-gap: 40px;
+  margin-bottom: 40px;
+
+  ${({ right }) =>
+    right &&
+    css`
+      grid-template-columns: 1fr 2fr;
+      color: #070e55;
+    `}
+
+  ${down('sm')} {
+    grid-template-columns: 1fr;
+    grid-gap: 0px;
+
+    & svg {
+      display: none;
+    }
+  }
+
+  & ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  & li {
+    padding: 20px;
+    margin-bottom: 40px;
+    background-color: ${({ color }) => color};
+  }
+`
+
+export const ListContainer = styled.div`
+  margin-top: 100px;
+
+  & h1 {
+    font-size: 36px;
+    text-align: ${({ right }) => (right ? 'right' : 'left')};
+  }
+
+  ${down('sm')} {
+    margin-top: 80px;
+
+    & h1 {
+      font-size: 24px;
+      text-align: left;
+    }
+  }
+`
+
+export const Row = styled.div`
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 40px;
+
+  ${down('sm')} {
+    grid-template-columns: 1fr;
+    grid-gap: 0px;
+  }
+`
