@@ -79,4 +79,5 @@ export const Title = styled.h1`
 
 export const Image = styled.img`
   width: 360px;
+  height: 632px;
 `
