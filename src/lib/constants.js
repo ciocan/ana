@@ -17,7 +17,7 @@ export const navigationPages = [
   {
     text: 'Work',
     name: 'Work portfolio',
-    path: '/work/security',
+    path: '/#work',
     extra: { gridArea: 'work', justifySelf: 'right' },
   },
   {

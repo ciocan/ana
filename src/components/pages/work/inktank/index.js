@@ -20,7 +20,7 @@ import {
 export default () => (
   <Layout>
     <Content>
-      <Intro color="#44AB96">
+      <Intro color="#4484AB">
         <ImageContainer>
           <Image src={ProjectImage} />
         </ImageContainer>

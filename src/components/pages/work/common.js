@@ -133,6 +133,9 @@ export const Image = styled(FullscreenImage)`
   margin-bottom: 30px;
 `
 
+export const Img = styled.img`
+  width: 100%;
+`
 export const Foot = styled.div`
   color: #949aaa;
   font-style: italic;
@@ -154,25 +157,36 @@ export const List = styled.div`
       color: #070e55;
     `}
 
-  ${down('sm')} {
-    grid-template-columns: 1fr;
-    grid-gap: 0px;
-
-    & svg {
-      display: none;
-    }
-  }
-
   & ul {
     list-style: none;
     margin: 0;
     padding: 0;
+    display: grid;
+    grid-gap: 30px;
+    width: auto;
+    height: 99%;
   }
 
   & li {
     padding: 20px;
-    margin-bottom: 40px;
+    font-size: 1.2rem;
     background-color: ${({ color }) => color};
+  }
+
+  ${down('sm')} {
+    grid-template-columns: 1fr;
+    grid-gap: 0px;
+
+    & img {
+      display: none;
+    }
+
+    & ul {
+    }
+
+    & li {
+      overflow: hidden;
+    }
   }
 `
 
@@ -203,4 +217,10 @@ export const Row = styled.div`
     grid-template-columns: 1fr;
     grid-gap: 0px;
   }
+`
+
+export const Caption = styled.p`
+  font-style: italic;
+  text-align: center;
+  margin-bottom: 60px;
 `

@@ -1,13 +1,16 @@
 import React from 'react'
 import { Layout } from '~components/Layout'
 import { Content, NextProject } from '~components/content'
-import Avatar from './images/avatar.svg'
+import Challanges from './images/challanges.png'
+import Outcomes from './images/outcomes.png'
 import Understanding from './images/understanding.png'
 import Persona1 from './images/persona1.png'
 import Persona2 from './images/persona2.png'
 import Storyboard from './images/storyboard.png'
 import Challenge from './images/challenge.png'
 import UserFlow from './images/user-flow.png'
+import Mockup from './images/mockup.png'
+import Wireframe from './images/wireframe.png'
 
 import { ProjectImage } from './styles'
 
@@ -27,6 +30,8 @@ import {
   ListContainer,
   Row,
   Image,
+  Img,
+  Caption,
 } from '~components/pages/work/common'
 
 export default () => (
@@ -118,15 +123,16 @@ export default () => (
             </ul>
           </Column>
           <Column>
-            <Avatar />
+            <Img src={Outcomes} />
           </Column>
         </List>
       </ListContainer>
+
       <ListContainer right>
         <Headline>Challenges</Headline>
         <List right color="#F2C53B">
           <Column>
-            <Avatar />
+            <Img src={Challanges} />
           </Column>
           <Column>
             <ul>
@@ -301,9 +307,19 @@ export default () => (
             After usability testing occurred we gathered and analyzed to findings in order to
             validate our Monday assumptions and used the learnings for the next planning meeting.
           </Text>
-          <Image src={UserFlow} alt="User Flow" />
         </div>
       </Section>
+
+      <Column>
+        <Headline size="36">Design Iterations</Headline>
+        <Image src={Mockup} alt="Early sketches of the onboarding flow" />
+        <Caption>Early sketches of the onboarding flow</Caption>
+        <Image src={UserFlow} alt="Low-fi wireframes of the onboarding flow" />
+        <Caption>Low-fi wireframes of the onboarding flow</Caption>
+        <Image src={Wireframe} alt="Example of Hi-Fi Wireflow handed over to developers" />
+        <Caption>Example of Hi-Fi Wireflow handed over to developers</Caption>
+      </Column>
+
       <Section>
         <Headline size="36">
           <No>06.</No>Usability Testing Takeaways & Solutions
@@ -351,6 +367,7 @@ export default () => (
           </Text>
         </div>
       </Section>
+
       <Section light>
         <Headline size="36">LESSONS LEARNED</Headline>
         <div>

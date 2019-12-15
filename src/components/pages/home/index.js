@@ -28,7 +28,9 @@ export default () => (
     </HomeContainer>
     <Content>
       <Explore>
-        <ExploreText>Explore projects</ExploreText>
+        <a id="work">
+          <ExploreText>Explore projects</ExploreText>
+        </a>
         <ArrowIcon />
       </Explore>
       <Projects>
@@ -61,7 +63,7 @@ export default () => (
           color="#4484AB"
           title="Ink Tank"
           year="2018"
-          type="Research"
+          type="Mobile App"
           link="/work/inktank"
         >
           Help tattoo seekers find the right artist.
