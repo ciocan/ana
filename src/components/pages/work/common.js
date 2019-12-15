@@ -77,11 +77,13 @@ export const Box = styled.div`
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 40px;
   margin-bottom: 100px;
+  padding: 40px;
 
   ${down('sm')} {
     grid-template-columns: 1fr;
-    grid-gap: 20px;
+    grid-gap: 0px;
     margin-bottom: 40px;
+    padding: 0;
   }
 `
 

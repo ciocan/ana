@@ -32,7 +32,7 @@ import {
 export default () => (
   <Layout>
     <Content>
-      <Intro color="#4484AB">
+      <Intro color="#44AB96">
         <Illustration>
           <ProjectImage />
         </Illustration>

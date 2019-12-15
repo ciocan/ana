@@ -24,7 +24,7 @@ export default () => (
         <ImageContainer>
           <Image src={ProjectImage} />
         </ImageContainer>
-        <Headline isBold>Ink Tank </Headline>
+        <Headline isBold>Ink Tank</Headline>
         <Subtitle>Help tattoo seekers find the right artists</Subtitle>
       </Intro>
 
