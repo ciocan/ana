@@ -64,8 +64,8 @@ export const Subtitle = styled.h2`
 export const Title = styled.h2``
 
 export const Text = styled.p`
-  font-style: normal;
   font-weight: ${({ isBold }) => (isBold ? 'bold' : 'normal')};
+  font-style: ${({ italic }) => (italic ? 'italic' : 'normal')};
   font-size: 18px;
   line-height: 32px;
   letter-spacing: 0.5px;
@@ -93,6 +93,12 @@ export const Section = styled.div`
   grid-gap: 60px;
   padding: 40px;
   margin-bottom: 40px;
+
+  & h4 {
+    position: relative;
+    font-weight: normal;
+    top: 15px;
+  }
 
   ${up('lg')} {
     & h1 {
