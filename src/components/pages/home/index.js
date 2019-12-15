@@ -66,7 +66,8 @@ export default () => (
           type="Mobile App"
           link="/work/inktank"
         >
-          Help tattoo seekers find the right artist.
+          Build a platform to help tattoo seekers find tattoo inspiration, and the tattoo artist in
+          an effort to minimise regret associated with the tattooing process. 
         </Project>
       </Projects>
     </Content>

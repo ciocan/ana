@@ -25,7 +25,10 @@ export default () => (
           <Image src={ProjectImage} />
         </ImageContainer>
         <Headline isBold>Ink Tank</Headline>
-        <Subtitle>Help tattoo seekers find the right artists</Subtitle>
+        <Subtitle>
+          Build a platform to help tattoo seekers find tattoo inspiration, and the tattoo artist in
+          an effort to minimise regret associated with the tattooing process. 
+        </Subtitle>
       </Intro>
 
       <Box>
