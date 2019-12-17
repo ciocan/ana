@@ -42,7 +42,7 @@ export default () => (
           type="Mobile App"
           link="/work/security"
         >
-          Rethinking the onboarding mobile experience of a secure banking app used to sign &
+          Redesigning the onboarding mobile experience of a security banking app used to sign &
           authorize transactions.
         </Project>
 
@@ -63,11 +63,11 @@ export default () => (
           color="#4484AB"
           title="Ink Tank"
           year="2018"
-          type="Mobile App"
+          type="PWA App"
           link="/work/inktank"
         >
-          Build a platform to help tattoo seekers find tattoo inspiration, and the tattoo artist in
-          an effort to minimise regret associated with the tattooing process. 
+          Build a PWA platform to help tattoo seekers find tattoo inspiration, and the right tattoo
+          artist in an effort to minimise regret associated with the tattooing process.  
         </Project>
       </Projects>
     </Content>

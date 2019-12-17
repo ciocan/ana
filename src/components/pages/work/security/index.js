@@ -190,6 +190,8 @@ export default () => (
                 Stakeholder interviews <br />
                 Personas <br />
                 Storyboard
+                <br />
+                Usability testing
               </Text>
             </Column>
           </Row>
@@ -202,11 +204,11 @@ export default () => (
         <div>
           <Text>
             <b>
-              We first surveyed the app’s reviews for the current design putting a special focus on
-              customer complaints. I also discussed with the call center support specialists to get
-              more insights on customer complaints. Next, we conducted 16 User interviews to
-              uncover pain points. This led to the development of Personas targeted for different
-              groups from our target audience and a Storyboard.
+              We first surveyed the app’s reviews for the current design, focusing on customer
+              complaints. I also discussed with the call center support specialists to get more
+              insights on customer complaints. Next, we conducted 16 User interviews to uncover pain
+              points. This led to the development of different Persona groups from our target
+              audience and a Storyboard.
             </b>
           </Text>
           <Image src={Understanding} />
@@ -270,7 +272,7 @@ export default () => (
       </Section>
       <Section>
         <Headline size="36">
-          <No>05.</No>Design Sprint Proces
+          <No>05.</No>Design Sprint Process
         </Headline>
         <div>
           <Text>
@@ -286,7 +288,7 @@ export default () => (
             We had an Iteration Planning Meeting with business stakeholders, Product owner, and
             Design each Monday to understand where we’re at and prioritize tasks according to the
             results from the prior week's usability testing making sure the users and business goals
-            are still aligned
+            are still aligned.
           </Text>
           <h4>Tuesday - Wednesday</h4>
           <Title>Refine Ideas & Decide</Title>
@@ -304,7 +306,7 @@ export default () => (
           <h4>Friday</h4>
           <Title>Test & Validate</Title>
           <Text>
-            After usability testing occurred we gathered and analyzed to findings in order to
+            After usability testing occurred we gathered and analyzed the findings in order to
             validate our Monday assumptions and used the learnings for the next planning meeting.
           </Text>
         </div>

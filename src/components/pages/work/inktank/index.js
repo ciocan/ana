@@ -45,8 +45,8 @@ export default () => (
         </ImageContainer>
         <Headline isBold>Ink Tank</Headline>
         <Subtitle>
-          Build a platform to help tattoo seekers find tattoo inspiration, and the tattoo artist in
-          an effort to minimise regret associated with the tattooing process. 
+          Build a PWA platform to help tattoo seekers find tattoo inspiration, and the right tattoo
+          artist in an effort to minimise regret associated with the tattooing process.
         </Subtitle>
       </Intro>
 
@@ -57,30 +57,27 @@ export default () => (
         </Column>
         <Column>
           <Title>Team</Title>
-          <Text>
-            UX Designer
-            <br />
-            Project manager
-            <br />
-            Product Owner
-            <br />
-            2 Front-end developers
-            <br />
-          </Text>
+          <Text>UX designer for end-to-end product design </Text>
         </Column>
         <Column>
           <Title>Role</Title>
           <Text>
-            Lead UX designer for end-to-end product redesign and research of a sign - authorise
-            banking transactions solution
+            Research
+            <br />
+            Conception
+            <br />
+            Wireframing
+            <br />
+            Prototyping
+            <br />
+            Design system
           </Text>
         </Column>
         <Column>
           <Title>Key Goal</Title>
           <Text>
-            Help users understand why they need a separate solution to sign & authorize
-            transactions and provide the integration with the main mobile banking app they already
-            use.
+            Help tattoo seekers find  tattoo inspiration, and the matching tattoo artist in an
+            effort to minimise regret associated with the tattooing process. 
           </Text>
         </Column>
       </Box>
@@ -128,7 +125,7 @@ export default () => (
               <li>01. Highest ranked competitors are Ink Hunter & TATTOODO</li>
               <li>02. Both use social media platforms as medium to interact with users</li>
               <li>03. Both platforms are present on European / US Market</li>
-              <li>04. None of the two platforms has a dedecated tattoo-artist feedback system</li>
+              <li>04. None of the two platforms has a dedicated tattoo-artist feedback system</li>
               <li>05. Ink Hunters structure is simpler than TATTOODOO’S</li>
             </ul>
           </Column>
@@ -190,13 +187,13 @@ export default () => (
           <No>03.</No>Design Process
         </Headline>
       </Section>
-      <Img src={DesingProcess} />
+      <Img src={DesingProcess} alt="design process" />
       <Section>
         <Headline size="36">Design Challenge</Headline>
         <Text>
           <i>
             How might we create a simple to use app that{' '}
-            <b>allows its users to look for inspiration and find tattoo artists who</b> can not only
+            <b>allows its users to look for inspiration and find tattoo artists who can</b> not only
             bring their ideas to life but most importantly <b>understand their needs?</b>
           </i>
         </Text>
@@ -205,8 +202,12 @@ export default () => (
         <Headline size="28px">MVP requirements</Headline>
         <Text>
           <b>
-            Simple and intuitive UI Clear home page where users can access info about tattoos,
-            studios ,artists and aftercare Make it easy to save tattoo designs & book appointments.
+            Simple and intuitive UI
+            <br />
+            Clear home page where users can access info about tattoos, studios, artists and
+            aftercare
+            <br />
+            Make it easy to save tattoo designs & book appointments.
           </b>
         </Text>
       </Section>
@@ -232,7 +233,7 @@ export default () => (
             <i>02  What are the main difficulties they encounter when searching for a tattoo?</i>
           </Text>
           <Text isBold>
-            <i>03  What were the main channels used to find inspiration?</i>
+            <i>03  What are the main channels used to find inspiration?</i>
           </Text>
           <Text isBold>
             <i>04  What matters the most to them throughout the process and after?</i>
@@ -264,26 +265,25 @@ export default () => (
         <Box>
           <Column blue>
             <Text>
-              Users rely heavily on social media platforms (Instagram, Pinterest or Google ) when
-              seeking tattoo inspiration.
+              tattoo seekers rely heavily on social media platforms (Instagram, Pinterest or Google)
+              when seeking tattoo inspiration.
             </Text>
           </Column>
           <Column blue>
             <Text>
-              Users rely heavily on social media platforms (Instagram, Pinterest or Google ) when
-              seeking tattoo inspiration.
+              tattoo seekers need to be able to see  artist’s portfolio to decide if they want to
+              work with him /her.
             </Text>
           </Column>
           <Column blue>
             <Text>
-              Users rely heavily on social media platforms (Instagram, Pinterest or Google ) when
-              seeking tattoo inspiration.
+              Often tattoo seekers feel overwhelmed by the process of finding a suitable artist
             </Text>
           </Column>
           <Column blue>
             <Text>
-              Users rely heavily on social media platforms (Instagram, Pinterest or Google ) when
-              seeking tattoo inspiration.
+              choosing the design is important, yet making sure they will not regret getting inked
+              is key to tattooing process
             </Text>
           </Column>
         </Box>
@@ -293,6 +293,19 @@ export default () => (
         <Headline size="36">
           <No>05.</No>Information Architecture - <br /> - Sitemap
         </Headline>
+        <div>
+          <Text>
+            I created the <b>draft version of the app's Information architecture sitemap</b> and{' '}
+            <b>then conducted a live</b> (using post-it notes) and{' '}
+            <b>remote card sorting session</b> (using optimalworkflow.com), asking users to organize
+            different topics into categories that made sense to them.
+          </Text>
+          <Text>
+            The <b>card sorting helped me identify patterns</b> and refine the initial version of
+            the Information architecture, into a more simple, intuitive and easier to implement
+            sitemap.
+          </Text>
+        </div>
       </Section>
       <FullscreenImage src={Sitemap} alt="Site map" />
 
@@ -323,7 +336,7 @@ export default () => (
           <Text>
             In order to get insights into the usefulness, usability, and desirability of the core
             functionalities of Ink Tank I created a prototype of the app using Invision and a
-            usability test plan. I moderated six usability tests, both in-person and remote.
+            usability test plan. <b>I moderated six usability tests, both in-person and remote.</b>
             Included in my usability test plan were demographic information, background and scenario
             tasks.
           </Text>
@@ -394,9 +407,9 @@ export default () => (
           </Text>
           <Title>03. Perform additional A/B testing</Title>
           <Text>
-            To make the solution no 2 even more intuitive, I gathered an extra round of feedback
-            from fellow designers and came up with <b>the calendar & slot picker</b> in one screen
-            kind of solution for the last iteration. I tested it again with the users, and{' '}
+            To make the solution No. 2 even more intuitive, I gathered an extra round of feedback
+            from fellow designers and came up with <b>the calendar & slot picker</b> in one screenn
+            for the last iteration. I performed a new A/B testing with the users, and{' '}
             <b>17 out of 19 participants gave positive feedback about the screen.</b>
           </Text>
         </div>
@@ -418,17 +431,17 @@ export default () => (
           <Title>Get out of your comfort zone</Title>
           <Text>
             Designing for an industry in which I had 0 knowledge prior to taking the project was
-            definitely one big challenge, which thought me a lot. It asked me to try to put myself
-            in user's shoes and empathize with their challenges and struggles, with the indecision
-            and fear they go through.
+            definitely one big challenge, which taught me a lot. It asked me to try to put myself in
+            user's shoes and empathize with their challenges and struggles, with the indecision and
+            fear they go through.
           </Text>
           <h4>02</h4>
           <Title>Avoid going straight to the solution​</Title>
           <Text>
-            The hardest thing about this project was thinking straight into solutions. I assumed
-            most people use mobile devices when looking for inspiration and that was simply not
-            true. During the research, I found out how I was wrong and I had to think about how to
-            make the app available on multiple devices, starting with a mobile-first approach.
+            The hardest thing about this project was avoid thinking straight into solutions. I
+            assumed most people use mobile devices when looking for inspiration and that was simply
+            not true. During the research, I found out how I was wrong and I had to think about how
+            to make the app available on multiple devices, starting with a mobile-first approach.
           </Text>
           <h4>03</h4>
           <Title>Iterate, iterate, iterate</Title>

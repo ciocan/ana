@@ -73,31 +73,32 @@ export default () => (
         <div>
           <Text>
             <b>
-              Banking sales agents are having high time costs collecting customer data relevant to
-              the cross-selling process. The current sales workflow was slow due to the need of
-              using multiple tools when gathering data to prepare the sales process in advance.
+              Banking sales agents are having high-costs timewise when collecting customer data
+              relevant to the cross-selling process. The current sales workflow was slow due to the
+              need of using multiple tools when gathering data to prepare the sales process in
+              advance.
             </b>
           </Text>
           <Title>The Need</Title>
           <Text>
             The sales agents needed a tool to make the cross-selling process effortless, giving them
             the ability to build and maintain a 360-degree customer profile which would facilitate
-            the sales process and closing deals in a more profitable and efficient manner. 
+            the sales process and closing deals in a more profitable and efficient manner.  
           </Text>
           <Title>The Goal</Title>
           <Text>
-            The project had two main goals: to leverage analytics data from the main banking app
-            called Smart banking in order to build machine learning models that would help improve
-            the existing sale tool (and therefore increase the number of sold products ) and to
-            create customized product campaigns in the Smart banking app for targeted types of
-            users.
+            The project had <b>two main goals</b>: to <b>leverage analytics data</b> from the main
+            banking app called Smart banking in order to build machine learning models that would
+            <b>help improve the existing sale tools</b> (and therefore increase the number of sold
+            products ) <b>and to create customized product campaigns</b> in the Smart banking app{' '}
+            <b>for targeted types of users</b>.
           </Text>
           <Foot>
             Please note: To comply with my non-disclosure agreement, I have omitted and obfuscated
             confidential information in this case study as final mockups for e.g. All information in
             this case study is my own and does not necessarily reflect the views of the company I
             worked for. I have replaced the original company and product names with the alias,
-            “eSecurity”.
+            "Sales meets Research & Data Science".
           </Foot>
         </div>
       </Section>
@@ -124,9 +125,9 @@ export default () => (
           <Title>Lean UX Process</Title>
           <Text>
             Before diving into the research phase, we had a kick-off meeting where the PO, Agile
-            Coach, Data Science team and Ito get to a collective understanding and alignment about
-            the current cross-selling process, what are the frictions sales agents are facing during
-            the process and what needs do they have.
+            Coach, Data Science team and I got to a collective understanding and alignment about the
+            current cross-selling process, what are the frictions sales agents are facing during the
+            process and what needs do they have.
           </Text>
         </div>
       </Section>
@@ -136,7 +137,7 @@ export default () => (
           <No>03.</No>Understanding the User
         </Headline>
         <div>
-          <Title>The Need</Title>
+          <Title>Research Setup</Title>
           <Text>
             We conducted <b>10 in-person user interviews</b> during <b>2 weeks</b> to better
             understand how the sales agents interact with clients, how do they collect data and keep
@@ -177,8 +178,11 @@ export default () => (
           <Text>
             A lot of the agents we interviewed mentioned the tools they currently use are
             providing a lot of information, but they rarely use it. When asked why they replied:
-            "It's simply too much information in one small space. I'd rather have some visual cues
-            to show me what's indeed important to know about a certain client". 
+            <b>
+              "It's simply too much information in one small space. I'd rather have some visual cues
+              to show me what's indeed important to know about a certain client"
+            </b>
+            .
           </Text>
           <Title>03. Fewer functionalities used in a more efficient way</Title>
           <Text>
@@ -189,9 +193,9 @@ export default () => (
           </Text>
           <Title>04. Clients come first</Title>
           <Text>
-            In order to be able to serve the clients better, agents need to have enough time to
-            conduct client-centered interactions. This means allowing for quality time with each of
-            them to fully understand their needs short-term and long term.
+            In order to be able to serve the clients better, <b>agents need</b> to have enough{' '}
+            <b>time to conduct client-centered interactions</b>. This means allowing for quality
+            time with each of them to fully understand their needs short-term and long term.
           </Text>
         </div>
       </Section>
@@ -211,7 +215,7 @@ export default () => (
             We could see during the Research phase of the project that design sprints bring great
             value to our Agile process. For this reason, we decided  to keep using the Agile
             stand-ups as long as the team benefits from them. Involving both engineering, data
-            science and design teams in this process helped  validate assumptions, test ideas in a
+            science and design teams in this process helped validate assumptions, test ideas in a
             safe space and keep everybody aligned on the outcomes we wanted to achieve together.
           </Text>
           <Title>3. Over-communication is key</Title>
