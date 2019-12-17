@@ -12,7 +12,6 @@ import {
   ExploreText,
   ArrowIcon,
   Description,
-  B,
   Projects,
   Image,
 } from './styles'
@@ -20,10 +19,10 @@ import {
 export default () => (
   <Layout>
     <HomeContainer>
-      <Headline>Hey, I'm Ana!</Headline>
+      <Headline>Hey, I'm Ana.</Headline>
       <Description>
-        A <B>multi-disciplinary designer</B> who works at the intersection of UX|UI, business,
-        engineering and human psychology to build web & mobile products.
+        <b>A multi-disciplinary designer</b> who works at the intersection of business, user
+        experience, engineering, & human psychology to build web & mobile products.
       </Description>
     </HomeContainer>
     <Content>

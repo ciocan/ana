@@ -17,10 +17,6 @@ export const Description = styled.p`
   letter-spacing: 0.1em;
 `
 
-export const B = styled.span`
-  font-weight: bold;
-`
-
 export const Explore = styled.span`
   display: inline-flex;
   align-items: center;
