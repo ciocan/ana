@@ -355,10 +355,10 @@ export default () => (
             3. Search for a tattoo design/artist
             <br />
           </Text>
-          <FullscreenImage src={ScreenFav} alt="Mark as favorite screen" />
+          <Img src={ScreenFav} alt="Mark as favorite screen" />
           <Caption>Mark as favorite screen</Caption>
           <FullscreenImage src={ScreenBook1} alt="Book appointment screens" />
-          <FullscreenImage src={ScreenBook2} alt="Book appointment screens" />
+          <Img src={ScreenBook2} alt="Book appointment screens" />
           <Caption>Book appointment screens</Caption>
         </div>
       </Section>

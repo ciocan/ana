@@ -1,5 +1,6 @@
 import React, { useState, useCallback } from 'react'
 import styled, { css } from 'styled-components'
+import { up } from 'styled-breakpoints'
 
 function FullscreenImage({ src, className, alt }) {
   const [fullscreen, setFullscreen] = useState(false)
@@ -30,6 +31,14 @@ const Container = styled.div`
       left: 0;
       width: 100vw;
       height: 100vh;
+
+      & img {
+        ${up('lg')} {
+          width: 80vw;
+          align-self: center;
+          margin: 80px 0;
+        }
+      }
     `}
 `
 
