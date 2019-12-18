@@ -316,9 +316,9 @@ export default () => (
         <Headline size="36">Design Iterations</Headline>
         <Image src={Mockup} alt="Early sketches of the onboarding flow" />
         <Caption>Early sketches of the onboarding flow</Caption>
-        <Image src={UserFlow} alt="Low-fi wireframes of the onboarding flow" />
+        <Img src={UserFlow} alt="Low-fi wireframes of the onboarding flow" />
         <Caption>Low-fi wireframes of the onboarding flow</Caption>
-        <Image src={Wireframe} alt="Example of Hi-Fi Wireflow handed over to developers" />
+        <Img src={Wireframe} alt="Example of Hi-Fi Wireflow handed over to developers" />
         <Caption>Example of Hi-Fi Wireflow handed over to developers</Caption>
       </Column>
 
