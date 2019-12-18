@@ -88,7 +88,7 @@ export default () => (
           <Title>The Goal</Title>
           <Text>
             The project had <b>two main goals</b>: to <b>leverage analytics data</b> from the main
-            banking app called Smart banking in order to build machine learning models that would
+            banking app called Smart banking in order to build machine learning models that would{' '}
             <b>help improve the existing sale tools</b> (and therefore increase the number of sold
             products ) <b>and to create customized product campaigns</b> in the Smart banking app{' '}
             <b>for targeted types of users</b>.
@@ -150,7 +150,7 @@ export default () => (
         <div></div>
         <div>
           <Title>User Personas</Title>
-          <Text>We narrowed down the Personas to two as it can be seen below:</Text>
+          <Text>We used research insights to build the Personas:</Text>
           <Image src={Persona1} alt="Persona" />
           <Image src={Persona2} alt="Persona" />
           <Title>Storyboard</Title>
@@ -186,10 +186,10 @@ export default () => (
           </Text>
           <Title>03. Fewer functionalities used in a more efficient way</Title>
           <Text>
-            This one was not surprising at all. Giving the age of information we live and the
-            cognitive overload we confront, I've fully empathized with the agents when they've told
-            they need tools should have fewer functionalities yet allowing them to do their work in
-            a more efficient way.
+            This one was not surprising at all. Giving the age of information we live in and the
+            cognitive overload we confront with, I've fully empathized with the agents when they've
+            told me they need tools which have fewer functionalities, yet allowing them to do their
+            work in a more efficient way.
           </Text>
           <Title>04. Clients come first</Title>
           <Text>

@@ -238,8 +238,7 @@ export default () => (
           </Text>
           <Title>User Personas</Title>
           <Text>
-            We narrowed down to personas to two main buckets: <b>tech-savvy</b> and{' '}
-            <b>non-tech savvy</b> users.
+            We narrowed down the personas to <b>tech-savvy</b> and <b>non-tech savvy</b> users.
           </Text>
           <Image src={Persona1} alt="Persona" />
           <Image src={Persona2} alt="Persona" />
@@ -251,9 +250,9 @@ export default () => (
           <Image src={Storyboard} alt="Storyboard" />
           <Title>Preliminary user testing</Title>
           <Text>
-            We designed a prototype and recruited 4 users to ask them to go through the current
-            onboarding flow of the eSecurity app. During testing, I was able to validate personas'
-            assumptions and spot even new users’ pain points.
+            We designed a <b>prototype</b> and recruited <b>4 users</b> to ask them to go through
+            the current onboarding flow of the eSecurity app. During testing, I was able to validate
+            personas' assumptions and spot even new users’ pain points.
           </Text>
         </div>
       </Section>
@@ -277,9 +276,8 @@ export default () => (
         <div>
           <Text>
             <b>eSecurity redesign used DESIGN SPRINT week iterations.</b> We employed a design
-            process that
-            <b>uses tools as human-centered design and Lean UX design thinking</b>, where
-            collaborative work between design, engineering and business teams made the process
+            process that <b>uses tools as human-centered design and Lean UX design thinking</b>,
+            where collaborative work between design, engineering and business teams made the process
             faster and more efficient.
           </Text>
           <h4>Monday - Tuesday</h4>
@@ -397,10 +395,9 @@ export default () => (
           <Title>Think + Design + Build + Validate</Title>
           <Text>
             Working with <b>short feedback loops</b> / sprints and <b>intense collaboration</b> with
-            stakeholders
-            <b>made the progress</b> very <b>much apparent at the end of each iteration.</b> It
-            ensured that assumptions would become certainties quickly and made "pivoting" a natural
-            part of the process.
+            stakeholders <b>made the progress</b> very{' '}
+            <b>much apparent at the end of each iteration.</b> It ensured that assumptions would
+            become certainties quickly and made "pivoting" a natural part of the process.
           </Text>
           <h4>04</h4>
           <Title>Designing our own process</Title>
