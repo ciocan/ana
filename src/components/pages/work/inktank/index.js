@@ -221,8 +221,8 @@ export default () => (
           <Text>
             I first conducted <b>Competitor analysis of apps as Tattoodo & Ink Hunter.</b> Next,
             I've conducted <b>in-person and remote user interviews</b> with domain experts{' '}
-            <b>(tattoo artists)</b>
-            and potential users (novice & experienced <b>tattoo seekers</b>).
+            <b>(tattoo artists)</b> and potential users (novice & experienced <b>tattoo seekers</b>
+            ).
           </Text>
           <Title>User Key Pain Points</Title>
           <Text>I was looking to find some answers to the following main questions:</Text>
@@ -336,7 +336,7 @@ export default () => (
           <Text>
             In order to get insights into the usefulness, usability, and desirability of the core
             functionalities of Ink Tank I created a prototype of the app using Invision and a
-            usability test plan. <b>I moderated six usability tests, both in-person and remote.</b>
+            usability test plan. <b>I moderated six usability tests, both in-person and remote.</b>{' '}
             Included in my usability test plan were demographic information, background and scenario
             tasks.
           </Text>
