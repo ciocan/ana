@@ -120,8 +120,8 @@ const Content = styled.p`
 
 const Link = styled.a`
   display: flex;
-  font-weight: bold;
-  font-size: 28px;
+  justify-content: space-between;
+  font-size: 1.3rem;
   display: flex;
   align-items: center;
   letter-spacing: 0.16em;
@@ -129,9 +129,13 @@ const Link = styled.a`
   color: #070e55;
   text-decoration: none;
   margin-top: auto;
+  border: 1px solid #070e55;
+  padding: 10px 20px;
+  width: 220px;
 
-  svg {
-    height: 60%;
+  & :hover {
+    font-weight: bold;
+    border: 2px solid #070e55;
   }
 
   ${down('lg')} {
@@ -142,15 +146,20 @@ const Link = styled.a`
     }
   }
 
+  ${down('md')} {
+    width: 400px;
+  }
+
   ${down('sm')} {
     color: #fff;
     font-size: 24px;
+    width: auto;
+    border: 1px solid #fff;
   }
 `
 
 const ArrowIcon = styled(Arrow)`
-  margin-left: 40px;
-
+  width: 2rem;
   ${down('sm')} {
     width: 35px;
 
