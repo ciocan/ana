@@ -33,12 +33,13 @@ export const Description = styled.p`
   }
 `
 
-export const Explore = styled.span`
+export const Explore = styled.a`
   display: inline-flex;
   align-items: center;
   margin-top: 40px;
   padding: 1.5rem;
   border: 1px solid white;
+  text-decoration: none;
 
   ${down('sm')} {
     display: flex;
@@ -53,6 +54,7 @@ export const ExploreText = styled.span`
   text-transform: capitalize;
   font-size: 1.8rem;
   margin-right: 30px;
+  color: #fff;
 
   ${down('sm')} {
     font-size: 18px;

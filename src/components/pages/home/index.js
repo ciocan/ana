@@ -27,13 +27,12 @@ export default () => (
           experience, engineering, & human psychology to build web & mobile products.
         </Description>
       </HomeContainer>
-      <Explore>
-        <a id="work">
-          <ExploreText>Explore projects</ExploreText>
-        </a>
+      <Explore href="#work">
+        <ExploreText>Explore projects</ExploreText>
         <ArrowIcon />
       </Explore>
       <Projects>
+        <a id="work" />
         <Project
           icon={<Security />}
           color="#44AB96"
