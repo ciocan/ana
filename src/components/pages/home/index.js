@@ -1,5 +1,5 @@
 import React from 'react'
-import { Content, Headline } from '~components/content'
+import { Content } from '~components/content'
 import { Layout } from '~components/Layout'
 import { Project } from './project'
 import Security from './images/project1.svg'
@@ -12,20 +12,21 @@ import {
   ExploreText,
   ArrowIcon,
   Description,
+  Headline,
   Projects,
   Image,
 } from './styles'
 
 export default () => (
   <Layout>
-    <HomeContainer>
-      <Headline>Hey, I'm Ana.</Headline>
-      <Description>
-        <b>A multi-disciplinary designer</b> who works at the intersection of business, user
-        experience, engineering, & human psychology to build web & mobile products.
-      </Description>
-    </HomeContainer>
     <Content>
+      <HomeContainer>
+        <Headline>Hey, I'm Ana,</Headline>
+        <Description>
+          <b>a multi-disciplinary designer</b> who works at the intersection of business, user
+          experience, engineering, & human psychology to build web & mobile products.
+        </Description>
+      </HomeContainer>
       <Explore>
         <a id="work">
           <ExploreText>Explore projects</ExploreText>

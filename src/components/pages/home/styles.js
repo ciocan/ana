@@ -3,18 +3,34 @@ import styled from 'styled-components'
 import { down } from 'styled-breakpoints'
 import Arrow from '~icons/arrow-down.svg'
 
-export const HomeContainer = styled.div`
-  max-width: 1400px;
-  padding: 40px;
+export const HomeContainer = styled.div``
+
+export const Headline = styled.h1`
+  font-family: Georgia;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 3rem;
+  line-height: 3rem;
+  letter-spacing: 0.04em;
+  display: flex;
+  align-items: center;
+  color: #e8db7d;
 
   ${down('sm')} {
-    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.8rem;
+    line-height: 1.8rem;
   }
 `
 
 export const Description = styled.p`
-  font-size: 3vmax;
+  font-size: 2rem;
   letter-spacing: 0.1em;
+
+  ${down('sm')} {
+    font-size: 1.4rem;
+  }
 `
 
 export const Explore = styled.span`

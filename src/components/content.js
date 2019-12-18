@@ -3,18 +3,6 @@ import styled from 'styled-components'
 import { down } from 'styled-breakpoints'
 import Arrow from '~icons/arrow-right.svg'
 
-export const Headline = styled.h1`
-  font-family: Georgia;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 7vmin;
-  line-height: 0.9em;
-  letter-spacing: 0.04em;
-  display: flex;
-  align-items: center;
-  color: #e8db7d;
-`
-
 export const Content = styled.div`
   position: relative;
   padding: 1rem 0;
