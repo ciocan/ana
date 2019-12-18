@@ -41,17 +41,24 @@ const Link = styled.a`
   color: #fff;
   text-decoration: none;
   font-size: 1.5rem;
-  border: 2px solid white;
+  border: 1px solid white;
   padding: 20px;
   text-transform: uppercase;
   text-align: center;
   width: 360px;
   margin: 0 auto;
+  margin-top: 100px;
+
+  & :hover {
+    border: 2px solid white;
+    font-weight: bold;
+  }
 
   ${down('sm')} {
     width: auto;
     font-size: 1.2rem;
     padding: 10px;
+    margin-top: 40px;
   }
 `
 
