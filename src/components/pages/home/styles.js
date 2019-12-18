@@ -37,21 +37,22 @@ export const Explore = styled.span`
   display: inline-flex;
   align-items: center;
   margin-top: 40px;
-  padding: 40px;
-  border: 2px solid white;
+  padding: 1.5rem;
+  border: 1px solid white;
 
   ${down('sm')} {
     display: flex;
     padding: 20px;
     justify-content: space-between;
+    margin-top: 80px;
   }
 `
 
 export const ExploreText = styled.span`
   letter-spacing: 0.16em;
   text-transform: capitalize;
-  font-size: 36px;
-  margin-right: 20px;
+  font-size: 1.8rem;
+  margin-right: 30px;
 
   ${down('sm')} {
     font-size: 18px;
@@ -59,6 +60,9 @@ export const ExploreText = styled.span`
 `
 
 export const ArrowIcon = styled(Arrow)`
+  width: 30px;
+  height: 30px;
+
   ${down('sm')} {
     width: 24px;
     height: 24px;
