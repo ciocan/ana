@@ -8,8 +8,9 @@ export const Footer = () => (
   <a id="contact">
     <Container>
       <Title>
-        Get in touch. <br />
-        Let’s collaborate.
+        Curious to see more projects?
+        <br />
+        Get in touch.
       </Title>
       <ContactContainer>
         <Text>
@@ -49,6 +50,7 @@ const ContactContainer = styled.div`
   width: 100%;
   max-width: 1000px;
   margin-bottom: 50px;
+  margin-top: 30px;
 
   ${down('sm')} {
     margin-bottom: 30px;
@@ -66,7 +68,7 @@ const Text = styled.div`
 
   & h1 {
     ${down('sm')} {
-      font-size: 28px;
+      font-size: 20px;
     }
   }
 
@@ -106,20 +108,20 @@ const Title = styled.h3`
   font-family: Georgia;
   font-style: normal;
   font-weight: bold;
-  font-size: 64px;
+  font-size: 36px;
   line-height: 70px;
   display: flex;
   align-items: center;
   text-align: center;
 
   ${down('md')} {
-    font-size: 42px;
-    line-height: 52px;
+    font-size: 32px;
+    line-height: 42px;
   }
 
   ${down('sm')} {
-    font-size: 28px;
-    line-height: 42px;
+    font-size: 20px;
+    line-height: 30px;
   }
 `
 
