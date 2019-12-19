@@ -7,9 +7,10 @@ export const Project = ({ icon, color, title, year, type, children, link = '#' }
   <Container color={color}>
     <IconContainer>{icon}</IconContainer>
     <ContentContainer>
-      <Year>{year}</Year>
       <Title>{title}</Title>
-      <Type>{type}</Type>
+      <Type>
+        <b>{year}</b> | {type}
+      </Type>
       <Content>{children}</Content>
       <Link href={link}>
         See Process <ArrowIcon />
@@ -20,7 +21,7 @@ export const Project = ({ icon, color, title, year, type, children, link = '#' }
 
 const Container = styled.div`
   display: flex;
-  padding: 80px;
+  padding: 40px 80px;
   color: #070e55;
   margin-bottom: 130px;
 
@@ -34,6 +35,10 @@ const Container = styled.div`
     flex-direction: column;
   }
 
+  ${down('md')} {
+    padding: 40px 40px;
+  }
+
   ${down('sm')} {
     padding: 0;
   }
@@ -41,7 +46,7 @@ const Container = styled.div`
 
 const IconContainer = styled.div`
   display: flex;
-  width: 50%;
+  width: 40%;
   overflow: hidden;
 
   ${down('lg')} {
@@ -49,8 +54,12 @@ const IconContainer = styled.div`
     justify-content: center;
   }
 
-  ${down('sm')} {
+  ${down('md')} {
     padding: 20px;
+  }
+
+  ${down('sm')} {
+    padding: 40px;
 
     svg {
       height: 80vw;
@@ -79,41 +88,32 @@ const Title = styled.h2`
   font-family: Georgia;
   font-style: normal;
   font-weight: bold;
-  font-size: 32px;
-  line-height: 36px;
-`
-const Year = styled.h3`
-  font-weight: bold;
-  font-size: 22px;
-  margin: 0;
+  font-size: 2rem;
 
   ${down('sm')} {
-    font-weight: normal;
-    color: #c5cfd6;
-    margin-top: 20px;
+    font-size: 1.6rem;
   }
 `
+
 const Type = styled.h4`
   font-style: normal;
   font-weight: normal;
-  font-size: 24px;
-  line-height: 24px;
+  font-size: 1.2rem;
   letter-spacing: -0.03em;
   margin: 0;
 
   ${down('sm')} {
-    font-size: 18px;
+    font-size: 1rem;
   }
 `
 const Content = styled.p`
   font-style: normal;
   font-weight: normal;
-  font-size: 28px;
-  line-height: 36px;
-  letter-spacing: -0.03em;
+  font-size: 24px;
 
   ${down('sm')} {
-    font-size: 24px;
+    font-size: 20px;
+    margin: 30px 0;
   }
 `
 
@@ -151,16 +151,24 @@ const Link = styled.a`
 
   ${down('sm')} {
     color: #fff;
-    font-size: 24px;
+    font-size: 1.2rem;
     width: auto;
     border: 1px solid #fff;
+    padding: 20px;
+    width: 60%;
+
+    & :hover {
+      font-weight: bold;
+      border: 2px solid #fff;
+    }
   }
 `
 
 const ArrowIcon = styled(Arrow)`
   width: 2rem;
+
   ${down('sm')} {
-    width: 35px;
+    width: 28px;
 
     & path {
       fill: #fff;
