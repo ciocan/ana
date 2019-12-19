@@ -48,9 +48,9 @@ export default class MyDocument extends Document {
             src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
           />
           <link
-            href="//fonts.googleapis.com/css?family=Montserrat:400,700&display=swap"
+            href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,700&display=swap"
             rel="stylesheet"
-          />
+          ></link>
           <link rel="manifest" href="/manifest.json" />
           <link rel="icon" sizes="256x256" href="/ana.png" />
           <link rel="apple-touch-icon" href="/ana.png" />

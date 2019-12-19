@@ -28,7 +28,7 @@ export const Layout = ({ children, title = '' }) => (
 )
 
 const Frame = styled.div`
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Nunito Sans', sans-serif;
   background-color: ${Colors.background};
   color: white;
   display: flex;

@@ -106,7 +106,6 @@ const Type = styled.h4`
   }
 `
 const Content = styled.p`
-  font-family: Montserrat;
   font-style: normal;
   font-weight: normal;
   font-size: 28px;
