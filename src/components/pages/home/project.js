@@ -72,15 +72,18 @@ const ContentContainer = styled.div`
   flex-direction: column;
   margin-left: 80px;
   width: 50%;
+  padding-top: 80px;
 
   ${down('lg')} {
     width: auto;
     margin-left: 0;
+    padding-top: 0;
   }
 
   ${down('sm')} {
     color: white;
     background: #2f4858;
+    padding-top: 10px;
   }
 `
 
@@ -101,9 +104,11 @@ const Type = styled.h4`
   font-size: 1.2rem;
   letter-spacing: -0.03em;
   margin: 0;
+  margin-top: -1rem;
 
   ${down('sm')} {
     font-size: 1rem;
+    margin-top: -0.8rem;
   }
 `
 const Content = styled.p`
