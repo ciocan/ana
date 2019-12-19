@@ -11,6 +11,7 @@ export const Content = styled.div`
   padding-bottom: 0.5rem;
   margin: 0;
   box-sizing: border-box;
+  margin-top: 140px;
 
   ${({ padding }) => padding && `padding: ${padding}`};
   ${({ margin }) => margin && `margin: ${margin}`};
@@ -23,6 +24,7 @@ export const Content = styled.div`
   ${down('sm')} {
     padding: 20px;
     width: 100%;
+    margin-top: 100px;
   }
 `
 

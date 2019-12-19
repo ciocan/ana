@@ -31,8 +31,8 @@ export default () => (
         <ExploreText>Explore projects</ExploreText>
         <ArrowIcon />
       </Explore>
+      <a id="work" />
       <Projects>
-        <a id="work" />
         <Project
           icon={<Security />}
           color="#44AB96"
