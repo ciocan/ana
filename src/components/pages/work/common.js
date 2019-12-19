@@ -62,6 +62,8 @@ export const Subtitle = styled.h2`
 `
 
 export const Title = styled.h2`
+  text-transform: uppercase;
+
   ${({ spaced }) =>
     spaced &&
     css`

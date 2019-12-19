@@ -48,7 +48,7 @@ export default class MyDocument extends Document {
             src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
           />
           <link
-            href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,600&display=swap"
+            href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,700&display=swap"
             rel="stylesheet"
           ></link>
           <link rel="manifest" href="/manifest.json" />
