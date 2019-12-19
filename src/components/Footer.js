@@ -74,7 +74,7 @@ const Text = styled.div`
 
   & h2 {
     font-weight: normal;
-    line-height: 20px;
+    line-height: 1rem;
 
     ${down('sm')} {
       font-size: 1rem;
@@ -96,11 +96,13 @@ const Container = styled.footer`
   color: #2f4858;
   padding: 20px;
   flex-shrink: 0;
-  padding-bottom: 50px;
+  padding-bottom: 40px;
+  padding-top: 40px;
 
   ${down('sm')} {
     margin-top: 5rem;
     padding-bottom: 30px;
+    padding-top: 20px;
   }
 `
 
@@ -109,14 +111,14 @@ const Title = styled.h3`
   font-style: normal;
   font-weight: bold;
   font-size: 2.2rem;
-  line-height: 4.2rem;
+  line-height: 3rem;
   display: flex;
   align-items: center;
   text-align: center;
 
   ${down('md')} {
     font-size: 2rem;
-    line-height: 3.8rem;
+    line-height: 3rem;
   }
 
   ${down('sm')} {

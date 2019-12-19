@@ -53,10 +53,10 @@ export default () => (
       </Container>
       <Title>Design Process</Title>
       <Container>
-        <DesignProcess title="I. Understand" subtitle="Research" img={<UnderstandImage />} />
-        <DesignProcess title="II. Define" subtitle="Three pillars product" img={<DefineImage />} />
-        <DesignProcess title="III. Build" subtitle="Bring ideas to life" img={<BuildImage />} />
-        <DesignProcess title="IV. Deliver" subtitle="Delivered Product" img={<DeliverImage />} />
+        <DesignProcess title="I. Understand" img={<UnderstandImage />} />
+        <DesignProcess title="II. Define" img={<DefineImage />} />
+        <DesignProcess title="III. Build" img={<BuildImage />} />
+        <DesignProcess title="IV. Deliver" img={<DeliverImage />} />
       </Container>
     </Content>
   </Layout>
@@ -72,10 +72,9 @@ const DesignPrinciple = ({ chapter, title, children }) => (
   </>
 )
 
-const DesignProcess = ({ title, subtitle, img }) => (
+const DesignProcess = ({ title, img }) => (
   <Process>
     <Title>{title}</Title>
-    <Subtitle>{subtitle}</Subtitle>
     {img}
   </Process>
 )
