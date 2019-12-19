@@ -68,7 +68,7 @@ const Text = styled.div`
 
   & h1 {
     ${down('sm')} {
-      font-size: 20px;
+      font-size: 1.2rem;
     }
   }
 
@@ -77,7 +77,7 @@ const Text = styled.div`
     line-height: 20px;
 
     ${down('sm')} {
-      font-size: 16px;
+      font-size: 1rem;
     }
   }
 `
@@ -108,20 +108,20 @@ const Title = styled.h3`
   font-family: Georgia;
   font-style: normal;
   font-weight: bold;
-  font-size: 36px;
-  line-height: 70px;
+  font-size: 2.2rem;
+  line-height: 4.2rem;
   display: flex;
   align-items: center;
   text-align: center;
 
   ${down('md')} {
-    font-size: 32px;
-    line-height: 42px;
+    font-size: 2rem;
+    line-height: 3.8rem;
   }
 
   ${down('sm')} {
-    font-size: 20px;
-    line-height: 30px;
+    font-size: 1.25rem;
+    line-height: 2rem;
   }
 `
 
@@ -139,6 +139,6 @@ const Copy = styled.p`
   font-weight: bold;
 
   ${down('sm')} {
-    font-size: 12px;
+    font-size: 0.8rem;
   }
 `
