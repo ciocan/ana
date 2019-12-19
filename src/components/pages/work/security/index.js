@@ -199,7 +199,7 @@ export default () => (
       </Section>
       <Section light>
         <Headline size="36">
-          <No>03.</No>User Research
+          <No>03.</No>Research Setup
         </Headline>
         <div>
           <Text>

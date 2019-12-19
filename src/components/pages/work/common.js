@@ -63,6 +63,11 @@ export const Subtitle = styled.h2`
 
 export const Title = styled.h2`
   text-transform: uppercase;
+  font-size: 1.4rem;
+
+  ${down('md')} {
+    font-size: 1.2rem;
+  }
 
   ${({ spaced }) =>
     spaced &&
@@ -79,9 +84,7 @@ export const Title = styled.h2`
 export const Text = styled.p`
   font-weight: ${({ isBold }) => (isBold ? 'bold' : 'normal')};
   font-style: ${({ italic }) => (italic ? 'italic' : 'normal')};
-  font-size: 18px;
-  line-height: 32px;
-  letter-spacing: 0.5px;
+  line-height: 1.5rem;
   padding-bottom: 20px;
 `
 
