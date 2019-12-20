@@ -37,11 +37,15 @@ import {
 } from '~components/pages/work/common'
 
 export default () => (
-  <Layout>
+  <Layout
+    title="Ink Tank Project |"
+    description="Platform to help tattoo seekers find tattoo inspiration"
+    keywords="tattoo seekers platform, ux research, project design"
+  >
     <Content>
       <Intro color="#4484AB">
         <ImageContainer>
-          <Image src={ProjectImage} />
+          <Image src={ProjectImage} alt="Ink Tank" />
         </ImageContainer>
         <Headline isBold>Ink Tank</Headline>
         <Subtitle>
@@ -130,7 +134,7 @@ export default () => (
             </ul>
           </Column>
           <Column>
-            <Img src={Analysis} />
+            <Img src={Analysis} alt="Competitive Analysis" />
           </Column>
         </List>
       </ListContainer>

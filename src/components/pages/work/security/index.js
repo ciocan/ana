@@ -35,7 +35,12 @@ import {
 } from '~components/pages/work/common'
 
 export default () => (
-  <Layout>
+  <Layout
+    title="eSecurity Redesign Project |"
+    description="A redesign project to learn how to integrate a sign & authorize transactions banking
+  solution within a mobile banking app."
+    keywords="redesign, authorize transactions, mobile banking app"
+  >
     <Content>
       <Intro color="#44AB96">
         <Illustration>
@@ -123,7 +128,7 @@ export default () => (
             </ul>
           </Column>
           <Column>
-            <Img src={Outcomes} />
+            <Img src={Outcomes} alt="Outcomes" />
           </Column>
         </List>
       </ListContainer>
@@ -132,7 +137,7 @@ export default () => (
         <Headline>Challenges</Headline>
         <List right color="#F2C53B">
           <Column>
-            <Img src={Challanges} />
+            <Img src={Challanges} alt="Challanges" />
           </Column>
           <Column>
             <ul>
@@ -211,7 +216,7 @@ export default () => (
               audience and a Storyboard.
             </b>
           </Text>
-          <Image src={Understanding} />
+          <Image src={Understanding} alt="Understanding" />
         </div>
       </Section>
       <Section>

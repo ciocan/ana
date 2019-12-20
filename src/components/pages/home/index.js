@@ -18,7 +18,11 @@ import {
 } from './styles'
 
 export default () => (
-  <Layout>
+  <Layout
+    title="Multi-disciplinary Designer |"
+    description="Multi-disciplinary designer who works at the intersection of business, user experience, engineering, & human psychology"
+    keywords="multi-disciplinary designer, user experience"
+  >
     <Content>
       <HomeContainer>
         <Headline>Hey, I'm Ana,</Headline>
@@ -58,7 +62,7 @@ export default () => (
         </Project>
 
         <Project
-          icon={<Image src={Inktank} />}
+          icon={<Image src={Inktank} alt="Ink Tank" />}
           color="#4484AB"
           title="Ink Tank"
           year="2018"

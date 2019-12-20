@@ -16,9 +16,9 @@ const theme = {
   },
 }
 
-export const Layout = ({ children, title = '' }) => (
+export const Layout = ({ children, title = '', description = '', keywords = '' }) => (
   <ThemeProvider theme={theme}>
-    <Head title={`${title} Ana State`} description="Ana State" keywords="Ana State" />
+    <Head title={`${title} Ana State`} description={description} keywords={keywords} />
     <Frame>
       <NavBar items={navigationPages} />
       <Container>{children}</Container>

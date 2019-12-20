@@ -21,7 +21,12 @@ import {
 } from '~components/pages/work/common'
 
 export default () => (
-  <Layout>
+  <Layout
+    title="Research & Data Science Project | "
+    description="Leverage UX Research and Analytics to build better tools for a more effective
+  cross-selling process."
+    keywords="research, data science, ux research"
+  >
     <Content>
       <Intro color="#F2C53B">
         <Illustration>

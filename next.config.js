@@ -22,7 +22,8 @@ const offlineConfig = {
           networkTimeoutSeconds: 15,
           expiration: {
             maxEntries: 150,
-            maxAgeSeconds: 3 * 24 * 60 * 60, // 3 days
+            // maxAgeSeconds: 3 * 24 * 60 * 60, // 3 days
+            maxAgeSeconds: 3600, // 3 days
           },
           cacheableResponse: {
             statuses: [0, 200],
