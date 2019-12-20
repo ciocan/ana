@@ -9,7 +9,11 @@ import DeliverImage from './images/deliver.svg'
 import { Container, Title, Subtitle, Text, Chapter, Process } from './styles'
 
 export default () => (
-  <Layout title="About">
+  <Layout
+    title="About"
+    description="UX Designer with a hybrid background in engineering and design"
+    keywords="UX designer, UX researcher"
+  >
     <Content>
       <Title>“Tell me about yourself”</Title>
       <Container>
