@@ -15,7 +15,7 @@ export default () => (
     keywords="UX designer, UX researcher"
   >
     <Content>
-      <Title>“Tell me about yourself”</Title>
+      <Title color="#e8db7d">“Tell me about yourself”</Title>
       <Container>
         <Text isBold>
           I’m a UX Designer with a hybrid background in engineering and design, who's craving
@@ -28,9 +28,9 @@ export default () => (
           start of each project I am involved in.
         </Text>
       </Container>
-      <Title>Design Principles</Title>
+      <Title color="#e8db7d">Design Philosophy</Title>
       <Container>
-        <DesignPrinciple chapter="A" title="MY PHILOSOPHY">
+        <DesignPrinciple chapter="A" title="TRIAL AND ERROR PROCESS">
           Learn, experiment, fail, succeed, repeat. And have a lot of fun while doing it.
         </DesignPrinciple>
         <DesignPrinciple chapter="B" title="EMPATHY & COMPASSION ARE KEY">
@@ -55,7 +55,7 @@ export default () => (
           thrive and grow.
         </DesignPrinciple>
       </Container>
-      <Title>Design Process</Title>
+      <Title color="#e8db7d">Design Process</Title>
       <Container>
         <DesignProcess title="I. Understand" img={<UnderstandImage />} />
         <DesignProcess title="II. Define" img={<DefineImage />} />
@@ -77,8 +77,11 @@ const DesignPrinciple = ({ chapter, title, children }) => (
 )
 
 const DesignProcess = ({ title, img }) => (
+  // TODO change foonts & update illustrations
   <Process>
-    <Title>{title}</Title>
+    <Title color="white" size="1.8rem !important">
+      {title}
+    </Title>
     {img}
   </Process>
 )

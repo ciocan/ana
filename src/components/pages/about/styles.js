@@ -19,26 +19,27 @@ export const Title = styled.h1`
   font-family: Georgia;
   font-style: normal;
   font-weight: bold;
-  font-size: 2.25rem;
+  font-size: ${({ size }) => size || '2.25rem'};
   align-items: center;
   margin-bottom: 40px;
+  color: ${({ color }) => color || '#fff'};
 
   ${down('md')} {
-    font-size: 1.375rem;
+    font-size: 1.8rem;
     line-height: 42px;
   }
 `
 
 export const Subtitle = styled.h2`
   font-weight: bold;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   line-height: 32px;
 `
 
 export const Text = styled.p`
   font-style: normal;
   font-weight: ${({ isBold }) => (isBold ? 'bold' : 'normal')};
-  font-size: 1.25rem;
+  font-size: 1.125rem;
   letter-spacing: 0.5px;
 
   ${down('sm')} {
@@ -50,6 +51,8 @@ export const Chapter = styled.h3`
   font-size: 64px;
   line-height: 61px;
   margin-left: 120px;
+  color: #c5cfd6;
+  font-family: Georgia;
 
   ${down('md')} {
     font-size: 36px;
@@ -59,7 +62,7 @@ export const Chapter = styled.h3`
 `
 
 export const Process = styled.div`
-  margin-top: 80px;
+  margin-top: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
