@@ -41,7 +41,7 @@ export const Headline = styled.h1`
   font-size: ${({ size }) => (size ? '44px' : size)};
   line-height: 44px;
   align-items: center;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 
   ${down('md')} {
     font-size: 30px;
@@ -84,8 +84,22 @@ export const Title = styled.h2`
 export const Text = styled.p`
   font-weight: ${({ isBold }) => (isBold ? 'bold' : 'normal')};
   font-style: ${({ italic }) => (italic ? 'italic' : 'normal')};
-  line-height: 1.5rem;
+  font-size: 1.125rem;
+  line-height: 160%;
   padding-bottom: 20px;
+
+  ${({ size }) =>
+    size &&
+    css`
+      font-size: ${size} !important;
+      line-height: 160% !important;
+    `}
+
+  ${({ pb }) =>
+    pb &&
+    css`
+      padding-bottom: ${pb};
+    `}
 `
 
 export const Box = styled.div`
@@ -104,6 +118,11 @@ export const Box = styled.div`
 `
 
 export const Column = styled.div`
+  ${Text} {
+    font-size: 0.85rem;
+    line-height: 1.3rem;
+  }
+
   ${({ light }) =>
     light &&
     css`
@@ -186,8 +205,9 @@ export const Img = styled.img`
 export const Foot = styled.div`
   color: #949aaa;
   font-style: italic;
-  border-top: 1px solid #070e55;
-  padding-top: 30px;
+  border-top: 1px solid #949aaa;
+  padding-top: 10px;
+  font-size: 0.875rem;
 `
 
 export const List = styled.div`
@@ -209,14 +229,14 @@ export const List = styled.div`
     margin: 0;
     padding: 0;
     display: grid;
-    grid-gap: 30px;
+    grid-gap: 20px;
     width: auto;
     height: 99%;
   }
 
   & li {
     padding: 20px;
-    font-size: 1.2rem;
+    font-size: 1rem;
     background-color: ${({ color }) => color};
   }
 

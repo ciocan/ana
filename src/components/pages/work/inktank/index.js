@@ -105,12 +105,10 @@ export default () => (
         </Headline>
         <div>
           <Text>
-            <b>
-              One of the central problems causing resentment of the tattoo seekers is not getting
-              understood by the artists they choose to collaborate with. Most often than not, people
-              regret getting inked due to the fact that what they receive as an end-product is not
-              what they requested, paid for or imagined it will be.
-            </b>
+            One of the central problems causing resentment of the tattoo seekers is not getting
+            understood by the artists they choose to collaborate with. Most often than not, people
+            regret getting inked due to the fact that what they receive as an end-product is not
+            what they requested, paid for or imagined it will be.
           </Text>
           <Title>The Challenge / opportunity</Title>
           <Text>

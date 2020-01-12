@@ -92,13 +92,11 @@ export default () => (
         </Headline>
         <div>
           <Text>
-            <b>
-              Due to legal /security constraints of the PSD2 EU directive, the banks have to employ
-              security solutions that allow users to sign and authorize transactions safely. This
-              leads to users' frustration who have to use two apps instead of one: the main mobile
-              banking app and the associated security solution that allows them to sign and
-              authorize transactions.
-            </b>
+            Due to legal /security constraints of the PSD2 EU directive, the banks have to employ
+            security solutions that allow users to sign and authorize transactions safely. This
+            leads to users' frustration who have to use two apps instead of one: the main mobile
+            banking app and the associated security solution that allows them to sign and authorize
+            transactions.
           </Text>
           <Foot>
             Please note: To comply with my non-disclosure agreement, I have omitted and obfuscated
@@ -164,17 +162,15 @@ export default () => (
         </Headline>
         <div>
           <Text>
-            <b>
-              As the lead UX designer of this project, I owned the global onboarding eSecurity
-              redesign and login integration within the main mobile banking app. In addition to
-              these flows, we also had to account for pending transactions flow, and sign &
-              authorize transaction flow.
-            </b>
+            As the lead UX designer of this project, I owned the global onboarding eSecurity
+            redesign and login integration within the main mobile banking app. In addition to these
+            flows, we also had to account for pending transactions flow, and sign & authorize
+            transaction flow.
           </Text>
           <Row>
             <Column>
               <Title>Design</Title>
-              <Text>
+              <Text size="1rem">
                 UI Design
                 <br />
                 Sketches
@@ -190,7 +186,7 @@ export default () => (
             </Column>
             <Column>
               <Title>User Research</Title>
-              <Text>
+              <Text size="1rem">
                 User interviews <br />
                 Stakeholder interviews <br />
                 Personas <br />
@@ -208,13 +204,11 @@ export default () => (
         </Headline>
         <div>
           <Text>
-            <b>
-              We first surveyed the app’s reviews for the current design, focusing on customer
-              complaints. I also discussed with the call center support specialists to get more
-              insights on customer complaints. Next, we conducted 16 User interviews to uncover pain
-              points. This led to the development of different Persona groups from our target
-              audience and a Storyboard.
-            </b>
+            We first surveyed the app’s reviews for the current design, focusing on customer
+            complaints. I also discussed with the call center support specialists to get more
+            insights on customer complaints. Next, we conducted <b>16 User interviews</b> to uncover
+            pain points. This led to the development of different <b>Persona groups</b> from our
+            target audience and a <b>Storyboard</b>.
           </Text>
           <Image src={Understanding} alt="Understanding" />
         </div>
@@ -224,31 +218,31 @@ export default () => (
           <No>04.</No>Understanding the user
         </Headline>
         <div>
-          <Title>USER KEY PAIN POINT</Title>
+          <Title>USER KEY PAIN POINTS</Title>
           <Text>
             <b>Understanding user's context</b>​ became crucial at this point in the process. We
             could clearly see that <b>onboarding flow was confusing and cluttered</b>, so we needed
             to find a way to reconcile user's needs with the legal compliance constraints we had to
             obey.
           </Text>
-          <Text isBold italic>
+          <Text italic pb="0px">
             01. Why do I need a separate app to sign & authorize transactions?​
           </Text>
-          <Text isBold italic>
+          <Text italic pb="0px">
             02. How does the activation process of the sign & authorize transactions app works?
           </Text>
-          <Text isBold italic>
+          <Text italic pb="40px">
             03. Call centers get countless numbers of customer complaints about the above-mentioned
             issues.
           </Text>
           <Title>User Personas</Title>
-          <Text>
+          <Text pb="0px">
             We narrowed down the personas to <b>tech-savvy</b> and <b>non-tech savvy</b> users.
           </Text>
           <Image src={Persona1} alt="Persona" />
           <Image src={Persona2} alt="Persona" />
           <Title>Storyboard</Title>
-          <Text>
+          <Text pb="0px">
             Going through a user scenario in the form of a storyboard helped the team empathize with
             users so that we could better address their pain points and frustrations.
           </Text>
@@ -316,7 +310,7 @@ export default () => (
       </Section>
 
       <Column>
-        <Headline size="36">Design Iterations</Headline>
+        <Headline>Design Iterations</Headline>
         <Image src={Mockup} alt="Early sketches of the onboarding flow" />
         <Caption>Early sketches of the onboarding flow</Caption>
         <Img src={UserFlow} alt="Low-fi wireframes of the onboarding flow" />
@@ -376,7 +370,6 @@ export default () => (
       <Section light>
         <Headline size="36">LESSONS LEARNED</Headline>
         <div>
-          <Title>This project left me with great insights. Here's what I learned:</Title>
           <h4>01</h4>
           <Title>Designing for security and legal is complex</Title>
           <Text>

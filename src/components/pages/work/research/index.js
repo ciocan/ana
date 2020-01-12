@@ -76,13 +76,11 @@ export default () => (
           <No>01.</No>The Problem
         </Headline>
         <div>
-          <Text>
-            <b>
-              Banking sales agents are having high-costs timewise when collecting customer data
-              relevant to the cross-selling process. The current sales workflow was slow due to the
-              need of using multiple tools when gathering data to prepare the sales process in
-              advance.
-            </b>
+          <Text italic>
+            Banking sales agents are having high-costs timewise when collecting customer data
+            relevant to the cross-selling process. The current sales workflow was slow due to the
+            need of using multiple tools when gathering data to prepare the sales process in
+            advance.
           </Text>
           <Title>The Need</Title>
           <Text>
@@ -114,11 +112,9 @@ export default () => (
         </Headline>
         <div>
           <Text>
-            <b>
-              As the sole UX designer of this project, I had the opportunity to pair up with a UX
-              Researcher and a Product Owner to define how we will approach the research phase and
-              what outcomes are we looking for.
-            </b>
+            As the sole UX designer of this project, I had the opportunity to pair up with a UX
+            Researcher and a Product Owner to define how we will approach the research phase and
+            what outcomes are we looking for.
           </Text>
           <Title>User Research</Title>
           <Text>
@@ -155,11 +151,11 @@ export default () => (
         <div></div>
         <div>
           <Title>User Personas</Title>
-          <Text>We used research insights to build the Personas:</Text>
+          <Text pb="0px">We used research insights to build the Personas:</Text>
           <Image src={Persona1} alt="Persona" />
           <Image src={Persona2} alt="Persona" />
           <Title>Storyboard</Title>
-          <Text>
+          <Text pb="0px">
             In order to capture in a more realistic way the cross-selling process, I built a
             storyboard. This helped the team to be on the same page and have the same understanding
             of the process.

@@ -18,14 +18,16 @@ export default () => (
       <Title color="#e8db7d">“Tell me about yourself”</Title>
       <Container>
         <Text isBold>
-          I’m a UX Designer with a hybrid background in engineering and design, who's craving
-          curiosity set me out to explore and understand human psychology, neuroscience, and
-          behaviorism.
+          I am a multidisciplinary designer who is passionate about neuroscience and human
+          psychology, emerging technologies, advocating for the value of UX across all fields of
+          work, facilitating design education, bringing people across different disciplines
+          together, and mentoring junior designers empowering them to grow in their careers.
         </Text>
         <Text>
-          I'm an advocate of inclusiveness, accessibility, and diversity and I feel that as a
-          designer I have a great responsibility to make sure these three are included from the very
-          start of each project I am involved in.
+          I believe the biggest skill we hold as designers is designing with our hearts as that’s
+          the underlying force which drives real change when helping others. Accessibility,
+          diversity & inclusiveness are three things I care deeply about when designing as they
+          widen my perspective of the world we’re living in.
         </Text>
       </Container>
       <Title color="#e8db7d">Design Philosophy</Title>
@@ -37,7 +39,7 @@ export default () => (
           UX design thought me the real value of empathy, and the more I harness this “tool", the
           more I fall in love with UX research. It enables me to understand people better, to work
           in a more collaborative way and to tell more compelling stories through my design process.
-          Compassion on the other hand, it provides me with the intent to helps the people I’m
+          Compassion on the other hand, it provides me with the intent to help the people I’m
           designing for.
         </DesignPrinciple>
         <DesignPrinciple
@@ -49,7 +51,6 @@ export default () => (
           with people from various disciplines.
         </DesignPrinciple>
         <DesignPrinciple chapter="D" title='I LOVE TO TRAIN MY "BRAIN MUSCLES"'>
-          This means I approach problem-solving both creatively and constructively. Getting out of
           This means I approach problem-solving both creatively and constructively. Getting out of
           my comfort zone to accommodate innovative solutions to various problems it’s what helps me
           thrive and grow.

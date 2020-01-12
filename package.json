@@ -6,7 +6,7 @@
     "build": "next build",
     "export": "next export",
     "start": "next start",
-    "deploy": "now --prod",
+    "deploy": "next build && now --prod",
     "lint": "eslint ."
   },
   "dependencies": {
