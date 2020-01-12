@@ -9,6 +9,7 @@ function _NavBar({ children, items, router }) {
   useEffect(() => {
     gtag.pageview(router.pathname)
   })
+  // TODO fix menu highlight
 
   return (
     <Nav>

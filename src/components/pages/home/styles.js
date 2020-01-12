@@ -25,11 +25,13 @@ export const Headline = styled.h1`
 `
 
 export const Description = styled.p`
-  font-size: 2rem;
+  font-size: 1.75rem;
+  line-height: 2rem;
   letter-spacing: 0.1em;
 
   ${down('sm')} {
     font-size: 1.4rem;
+    line-height: 1.8rem;
   }
 `
 

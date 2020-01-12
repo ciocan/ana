@@ -21,9 +21,13 @@ export const Project = ({ icon, color, title, year, type, children, link = '#' }
 
 const Container = styled.div`
   display: flex;
-  padding: 40px 80px;
+  padding: 0px 80px;
   color: #070e55;
-  margin-bottom: 130px;
+
+  :hover {
+    transform: scale(1.02);
+    transition: all 0.1s ease-in-out;
+  }
 
   ${({ color }) =>
     color &&
@@ -36,11 +40,13 @@ const Container = styled.div`
   }
 
   ${down('md')} {
+    flex-direction: column;
     padding: 40px 40px;
   }
 
   ${down('sm')} {
     padding: 0;
+    margin-bottom: 40px;
   }
 `
 
@@ -72,7 +78,7 @@ const ContentContainer = styled.div`
   flex-direction: column;
   margin-left: 80px;
   width: 50%;
-  padding-top: 80px;
+  padding: 80px 0;
 
   ${down('lg')} {
     width: auto;
@@ -92,6 +98,7 @@ const Title = styled.h2`
   font-style: normal;
   font-weight: bold;
   font-size: 2rem;
+  line-height: 2rem;
 
   ${down('sm')} {
     font-size: 1.6rem;
@@ -114,7 +121,8 @@ const Type = styled.h4`
 const Content = styled.p`
   font-style: normal;
   font-weight: normal;
-  font-size: 24px;
+  font-size: 1.375rem;
+  line-height: 1.75rem;
 
   ${down('sm')} {
     font-size: 20px;
