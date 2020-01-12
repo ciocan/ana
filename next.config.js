@@ -23,7 +23,7 @@ const offlineConfig = {
           expiration: {
             maxEntries: 150,
             // maxAgeSeconds: 3 * 24 * 60 * 60, // 3 days
-            maxAgeSeconds: 0, //
+            maxAgeSeconds: 60, //
           },
           cacheableResponse: {
             statuses: [0, 200],
