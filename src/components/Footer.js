@@ -16,7 +16,9 @@ export const Footer = () => (
         <Text>
           <h1>Contact</h1>
           <h2>+31 638080306</h2>
-          <h2>hello@anastate.com</h2>
+          <h2>
+            <a href="mailto:hello@anastate.com">hello@anastate.com</a>
+          </h2>
         </Text>
         <Text>
           <h1>Resume</h1>
@@ -67,6 +69,8 @@ const Text = styled.div`
   }
 
   & h1 {
+    font-size: 1.6rem;
+
     ${down('sm')} {
       font-size: 1.2rem;
     }
@@ -74,6 +78,7 @@ const Text = styled.div`
 
   & h2 {
     font-weight: normal;
+    font-size: 1.3rem;
     line-height: 1rem;
 
     ${down('sm')} {
@@ -138,8 +143,6 @@ const PdfIcon = styled(FilePdf)`
 `
 
 const Copy = styled.p`
-  font-weight: bold;
-
   ${down('sm')} {
     font-size: 0.8rem;
   }

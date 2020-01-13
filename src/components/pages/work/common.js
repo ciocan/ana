@@ -38,7 +38,7 @@ export const Headline = styled.h1`
   font-family: Georgia;
   font-style: normal;
   font-weight: bold;
-  font-size: ${({ size }) => (size ? '44px' : size)};
+  font-size: ${({ size }) => (size ? size : '44px')};
   line-height: 44px;
   align-items: center;
   margin-bottom: 20px;
@@ -106,7 +106,7 @@ export const Box = styled.div`
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 40px;
-  margin-bottom: 100px;
+  margin-bottom: 20px;
   padding: 40px;
 
   ${down('sm')} {
@@ -146,7 +146,19 @@ export const Column = styled.div`
     blue &&
     css`
       background: #85a5f5;
-      color: #ffffff;
+      color: #0e1c5e;
+      padding: 20px;
+
+      ${down('sm')} {
+        margin-bottom: 20px;
+      }
+    `}
+
+  ${({ green }) =>
+    green &&
+    css`
+      background: #78dcca;
+      color: #0e1c5e;
       padding: 20px;
 
       ${down('sm')} {

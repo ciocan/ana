@@ -86,29 +86,23 @@ export default () => (
         </Column>
       </Box>
 
-      <Section>
-        <Headline size="36">Tattoo Industry</Headline>
-        <div>
-          <Text>
-            <b>
-              Currently the tattoo industry (including tattoo removal) it's a more than 3$ billion
-              industry. That's because daily, someone decides to get a tattoo, or on the contrary,
-              to remove one.
-            </b>
-          </Text>
-        </div>
-      </Section>
-
       <Section light>
         <Headline size="36">
           <No>01.</No>The Problem
         </Headline>
         <div>
+          <Title>Tattoo Industry</Title>
+          <Text>
+            Currently the tattoo industry (including tattoo removal) it's a more than $3 billion
+            industry. That's because daily, someone decides to get a tattoo, or on the contrary, to
+            remove one.
+          </Text>
           <Text>
             One of the central problems causing resentment of the tattoo seekers is not getting
-            understood by the artists they choose to collaborate with. Most often than not, people
-            regret getting inked due to the fact that what they receive as an end-product is not
-            what they requested, paid for or imagined it will be.
+            understood by the artists they choose to collaborate with. Most often than not,{' '}
+            <b>people regret getting inked</b> due to the fact that{' '}
+            <b>what they receive as an end-product is not what they requested</b>, paid for or
+            imagined it will be.
           </Text>
           <Title>The Challenge / opportunity</Title>
           <Text>
@@ -143,16 +137,14 @@ export default () => (
         </Headline>
         <div>
           <Text>
-            <b>
-              As the lead UX designer of this project, I owned the end-to-end process, from
-              competitive analysis & user research, to ideation, wireframing , information
-              architecture & visual design.
-            </b>
+            As the lead UX designer of this project, I owned the end-to-end process, from
+            competitive analysis & user research, to ideation, wireframing , information
+            architecture & visual design.
           </Text>
           <Row>
             <Column>
               <Title>Design</Title>
-              <Text>
+              <Text size="1rem">
                 UI Design
                 <br />
                 Sketches
@@ -168,7 +160,7 @@ export default () => (
             </Column>
             <Column>
               <Title>User Research</Title>
-              <Text>
+              <Text size="1rem">
                 User interviews <br />
                 Stakeholder interviews <br />
                 Personas <br />
@@ -177,21 +169,21 @@ export default () => (
               </Text>
             </Column>
           </Row>
-          <Title>Lean UX Process</Title>
+          <Title>MVP Requirements</Title>
           <Text>
-            Altough I was responsible for the end-to-end process I applied a Lean UX approach to it.
+            * Simple and intuitive UI
+            <br />
+            * Clear home page where users can access info about tattoos, studios, artists and
+            aftercare
+            <br />* Make it easy to save tattoo designs & book appointments.
           </Text>
         </div>
       </Section>
 
-      <Section>
-        <Headline size="36">
+      <Section light>
+        <Headline size="2rem !important">
           <No>03.</No>Design Process
         </Headline>
-      </Section>
-      <Img src={DesingProcess} alt="design process" />
-      <Section>
-        <Headline size="36">Design Challenge</Headline>
         <Text>
           <i>
             How might we create a simple to use app that{' '}
@@ -200,21 +192,9 @@ export default () => (
           </i>
         </Text>
       </Section>
-      <Section>
-        <Headline size="28px">MVP requirements</Headline>
-        <Text>
-          <b>
-            Simple and intuitive UI
-            <br />
-            Clear home page where users can access info about tattoos, studios, artists and
-            aftercare
-            <br />
-            Make it easy to save tattoo designs & book appointments.
-          </b>
-        </Text>
-      </Section>
+      <Img src={DesingProcess} alt="design process" style={{ marginTop: '-100px' }} />
 
-      <Section light>
+      <Section light style={{ marginTop: '-20px', paddingTop: '80px' }}>
         <Headline size="36">
           <No>04.</No>Understanding the User
         </Headline>
@@ -230,15 +210,13 @@ export default () => (
           <Text>I was looking to find some answers to the following main questions:</Text>
           <Text isBold>
             <i>01  What was the user's process when searching for inspiration?</i>
-          </Text>
-          <Text isBold>
+            <br />
             <i>02  What are the main difficulties they encounter when searching for a tattoo?</i>
-          </Text>
-          <Text isBold>
+            <br />
             <i>03  What are the main channels used to find inspiration?</i>
-          </Text>
-          <Text isBold>
+            <br />
             <i>04  What matters the most to them throughout the process and after?</i>
+            <br />
           </Text>
         </div>
       </Section>
@@ -264,7 +242,7 @@ export default () => (
 
       <Column light>
         <Title spaced>User Research Learnings</Title>
-        <Box>
+        <Box style={{ marginTop: '-30px' }}>
           <Column blue>
             <Text>
               tattoo seekers rely heavily on social media platforms (Instagram, Pinterest or Google)
@@ -291,7 +269,7 @@ export default () => (
         </Box>
       </Column>
 
-      <Section>
+      <Section style={{ marginBottom: '0' }}>
         <Headline size="36">
           <No>05.</No>Information Architecture - <br /> - Sitemap
         </Headline>
@@ -329,7 +307,7 @@ export default () => (
         </div>
       </Section>
 
-      <Section>
+      <Section style={{ marginBottom: '0px' }}>
         <Headline size="36">
           <No>B.</No>Prototype, Test, Validate
         </Headline>
@@ -367,19 +345,19 @@ export default () => (
 
       <Column light>
         <Title spaced>Usability Test Results</Title>
-        <Box>
-          <Column blue>
+        <Box style={{ marginTop: '-30px' }}>
+          <Column green>
             <Text>
               Heart icon was used to mark designs as a favourite instead of the SAVE button.
             </Text>
           </Column>
-          <Column blue>
+          <Column green>
             <Text>Users found the SEARCH functionality intuitive to use.</Text>
           </Column>
-          <Column blue>
+          <Column green>
             <Text>Users found it confusing to BOOK an appointment.</Text>
           </Column>
-          <Column blue>
+          <Column green>
             <Text>User will always look for known patterns from other apps they use</Text>
           </Column>
         </Box>
@@ -417,18 +395,24 @@ export default () => (
         </div>
       </Section>
 
-      <Section>
+      <Section light>
         <Headline size="36">
           <No>07.</No>Polished Mockups
         </Headline>
+        <Text>
+          Once I tested out the usability errors, I started designing the high - fidelity wireframes
+          in FIGMA. The last refinements of the screens were done keeping accessibility and Gestalt
+          Principles in mind. The visual style of the app is simple, using a black header against a
+          white background which serves as a canvas for images and green for contrast accents and
+          buttons.
+        </Text>
       </Section>
       <FullscreenImage src={PolishedDesign} alt="Hi-Fi Wireframes of the Search Flow" />
       <Caption>Hi-Fi Wireframes of the Search Flow</Caption>
 
       <Section light>
-        <Headline size="36">LESSONS LEARNED</Headline>
+        <Headline>LESSONS LEARNED</Headline>
         <div>
-          <Title>This project left me with great and insights. Here's what I learned:</Title>
           <h4>01</h4>
           <Title>Get out of your comfort zone</Title>
           <Text>
