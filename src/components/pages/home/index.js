@@ -20,7 +20,7 @@ import {
 export default () => (
   <Layout
     title="Multi-disciplinary Designer |"
-    description="Multi-disciplinary designer who works at the intersection of business, user experience, engineering, & human psychology"
+    description="Multi-disciplinary designer who works at the intersection of business, user experience, engineering, and human psychology to build digital experiences & products"
     keywords="multi-disciplinary designer, user experience"
   >
     <Content>
@@ -28,7 +28,7 @@ export default () => (
         <Headline>Hey, I'm Ana,</Headline>
         <Description>
           <b>a multi-disciplinary designer</b> who works at the intersection of business, user
-          experience, engineering, & human psychology to build web & mobile products.
+          experience, engineering, and human psychology to build digital experiences & products.
         </Description>
       </HomeContainer>
       <Explore href="#work">

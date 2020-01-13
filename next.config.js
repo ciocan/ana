@@ -8,10 +8,6 @@ const offlineConfig = {
   target: 'serverless',
   transformManifest: manifest => ['/'].concat(manifest),
   workboxOpts: {
-    modifyURLPrefix: {
-      'static/': '_next/static/',
-      'public/': '/',
-    },
     swDest: 'static/service-worker.js',
     runtimeCaching: [
       {
