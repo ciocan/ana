@@ -15,6 +15,27 @@ export const Container = styled.div`
   }
 `
 
+export const AboutContainer = styled.div`
+  margin-bottom: 100px;
+`
+
+export const Avatar = styled.img`
+  width: 240px;
+  height: 240px;
+  border-radius: 240px;
+  float: right;
+  display: block;
+  margin-left: 160px;
+  margin-bottom: 40px;
+
+  ${down('md')} {
+    width: 120px;
+    height: 120px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+  }
+`
+
 export const Title = styled.h1`
   font-family: Georgia;
   font-style: normal;
@@ -25,7 +46,7 @@ export const Title = styled.h1`
   color: ${({ color }) => color || '#fff'};
 
   ${down('md')} {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     line-height: 42px;
   }
 `
@@ -69,6 +90,7 @@ export const Process = styled.div`
 
   & ${Title} {
     font-family: 'Nunito Sans', sans-serif;
+    text-transform: uppercase;
     font-size: 2rem;
     margin-bottom: 0;
 
@@ -93,4 +115,9 @@ export const Process = styled.div`
       height: 80vw;
     }
   }
+`
+
+export const ImageContainer = styled.div`
+  padding: 0 20px;
+  margin-top: -20px;
 `

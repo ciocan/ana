@@ -5,8 +5,19 @@ import UnderstandImage from './images/understand.svg'
 import DefineImage from './images/define.svg'
 import BuildImage from './images/build.svg'
 import DeliverImage from './images/deliver.svg'
+import AnaState from './images/ana-state.jpg'
 
-import { Container, Title, Subtitle, Text, Chapter, Process } from './styles'
+import {
+  Container,
+  Title,
+  Subtitle,
+  Text,
+  Chapter,
+  Process,
+  ImageContainer,
+  Avatar,
+  AboutContainer,
+} from './styles'
 
 export default () => (
   <Layout
@@ -16,12 +27,13 @@ export default () => (
   >
     <Content>
       <Title color="#e8db7d">“Tell me about yourself”</Title>
-      <Container>
-        <Text isBold>
-          I am a multidisciplinary designer who is passionate about neuroscience and human
-          psychology, emerging technologies, advocating for the value of UX across all fields of
-          work, facilitating design education, bringing people across different disciplines
-          together, and mentoring junior designers empowering them to grow in their careers.
+      <AboutContainer>
+        <Avatar src={AnaState} />
+        <Text isBold style={{ marginBottom: '40px' }}>
+          I’m passionate about human psychology, emerging technologies, advocating for the value of
+          UX across all fields of work, facilitating design education, bringing people across
+          different disciplines together, and mentoring junior designers empowering them to grow in
+          their careers.
         </Text>
         <Text>
           I believe the biggest skill we hold as designers is designing with our hearts as that’s
@@ -29,7 +41,7 @@ export default () => (
           diversity & inclusiveness are three things I care deeply about when designing as they
           widen my perspective of the world we’re living in.
         </Text>
-      </Container>
+      </AboutContainer>
       <Title color="#e8db7d">Design Philosophy</Title>
       <Container>
         <DesignPrinciple chapter="A" title="TRIAL AND ERROR PROCESS">
@@ -80,9 +92,9 @@ const DesignPrinciple = ({ chapter, title, children }) => (
 const DesignProcess = ({ title, img }) => (
   // TODO change foonts & update illustrations
   <Process>
-    <Title color="white" size="1.8rem !important">
+    <Title color="white" size="1.4rem !important">
       {title}
     </Title>
-    {img}
+    <ImageContainer>{img}</ImageContainer>
   </Process>
 )
