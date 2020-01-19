@@ -91,13 +91,24 @@ export default () => (
           <No>01.</No>The Problem
         </Headline>
         <div>
+          <Title>PRODUCT VISION</Title>
           <Text>
-            Due to legal /security constraints of the PSD2 EU directive, the banks have to employ
-            security solutions that allow users to sign and authorize transactions safely. This
-            leads to users' frustration who have to use two apps instead of one: the main mobile
-            banking app and the associated security solution that allows them to sign and authorize
-            transactions.
+            The vision was to bring consistency across the product - a complex ecosystem comprised
+            of multiple apps such as a banking app and its “relatives”: a loan lending app, my home
+            app (used to employ a house mortgage), eSecurity etc. In order to bring consistency
+            across Product, we had to focus our efforts on how to make all the apps work and look
+            like they belong together & provide the users with a seamless experience when using
+            them.
           </Text>
+          <Title>THE UNDERLYING PROBLEM</Title>
+          <Text>
+            eSecurity - a security app that would allow users to sign and authorize transactions
+            proved to be one of the underlying problems we aimed to solve, as its{' '}
+            <b>onboarding flow was causing a lot of confusion to its users</b>, who wouldn’t
+            understand how to go through the flow and set up the app. The lack of integration with
+            the main banking app was making it difficult for them to understand why they need it.
+          </Text>
+
           <Foot>
             Please note: To comply with my non-disclosure agreement, I have omitted and obfuscated
             confidential information in this case study as final mockups for e.g. All information in
@@ -139,7 +150,7 @@ export default () => (
           </Column>
           <Column>
             <ul>
-              <li>01. The need to integrate the flows of 2 apps as one</li>
+              <li>01. Prerequisite - PSD2 API implementation & design</li>
               <li>02. No in-house dedicated front-end development team</li>
               <li>
                 03. Very tight timelines for design - compressing 3-months planning & designing into
@@ -259,11 +270,9 @@ export default () => (
         <Headline size="36">Design Challenge</Headline>
         <div>
           <Text italic>
-            How might we create a <b>simple to use</b> and integrated banking <b>app</b> to sign &
-            authorize transactions that{' '}
-            <b>
-              provides value for the users and reduces the number of complaints to call-centers?
-            </b>
+            How might we create a <b>simple to use onboarding flow</b>, integrated with the main
+            banking app that allows users to sign & authorize transactions safely and reduces the
+            number of complaints to call-centres?
           </Text>
           <Image src={Challenge} alt="Design Challenge" />
         </div>
