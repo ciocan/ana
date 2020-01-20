@@ -37,8 +37,7 @@ import {
 export default () => (
   <Layout
     title="eSecurity Redesign Project |"
-    description="A redesign project to learn how to integrate a sign & authorize transactions banking
-  solution within a mobile banking app."
+    description="Redesigning the onboarding mobile experience of a security banking app used to sign & authorize transactions."
     keywords="redesign, authorize transactions, mobile banking app"
   >
     <Content>
@@ -48,8 +47,8 @@ export default () => (
         </Illustration>
         <Headline isBold>eSecurity redesign</Headline>
         <Subtitle>
-          A redesign project to learn how to integrate a sign & authorize transactions banking
-          solution within a mobile banking app.
+          Redesigning the onboarding mobile experience of a security banking app used to sign &
+          authorize transactions.
         </Subtitle>
       </Intro>
       <Box>
