@@ -152,8 +152,8 @@ export default () => (
               <li>01. Prerequisite - PSD2 API implementation & design</li>
               <li>02. No in-house dedicated front-end development team</li>
               <li>
-                03. Very tight timelines for design - compressing 3-months planning & designing into
-                a 3-weeks chunk
+                03. Adopting an Agile way of working in an environment which was using waterfall
+                methodology previously
               </li>
               <li>
                 04. My involvement as a designer in 2 other projects at the same time ( challenging
