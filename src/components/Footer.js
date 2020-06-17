@@ -15,7 +15,7 @@ export const Footer = () => (
       <ContactContainer>
         <Text>
           <h1>Contact</h1>
-          <h2>+31 638080306</h2>
+          <h2>‭+44 7388 731 630‬</h2>
           <h2>
             <a href="mailto:hello@anastate.com">hello@anastate.com</a>
           </h2>
