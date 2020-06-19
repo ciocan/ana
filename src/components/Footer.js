@@ -32,7 +32,7 @@ export const Footer = () => (
               <LinkedinIcon />
             </a>
             <a
-              href="Ana_State_Resume_UX_UI_Designer_2019.pdf"
+              href="Senior_Product Designer_Resume_Ana_State.pdf"
               target="_blank"
               aria-label="PDF Resume"
             >
