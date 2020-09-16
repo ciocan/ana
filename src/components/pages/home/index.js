@@ -19,9 +19,9 @@ import {
 
 export default () => (
   <Layout
-    title="Multi-disciplinary Designer |"
-    description="Multi-disciplinary designer who works at the intersection of business, user experience, and human psychology to help businesses build experiences & services people love"
-    keywords="multi-disciplinary designer, user experience"
+    title="Technical Product Designer |"
+    description="Technical Product Designer who works at the intersection of business, user experience, and human psychology to help businesses build experiences & services people love"
+    keywords="technical product designer, user experience"
   >
     <Content>
       <HomeContainer>
