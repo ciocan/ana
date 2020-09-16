@@ -27,7 +27,7 @@ export default () => (
       <HomeContainer>
         <Headline>Hey, I'm Ana,</Headline>
         <Description>
-          <b>a multi-disciplinary designer</b> who works at the intersection of business, user
+          a <b>technical product designer</b> who works at the intersection of business, user
           experience, and human psychology to help businesses build experiences & services people
           love.
         </Description>
