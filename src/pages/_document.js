@@ -3,8 +3,6 @@ import Document, { Head, Main, NextScript } from 'next/document'
 import { ServerStyleSheet } from 'styled-components'
 import { GA_TRACKING_ID } from '../lib/gtag'
 
-import 'normalize.css'
-
 export default class MyDocument extends Document {
   static async getInitialProps(ctx) {
     const sheet = new ServerStyleSheet()
@@ -13,7 +11,7 @@ export default class MyDocument extends Document {
     try {
       ctx.renderPage = () =>
         originalRenderPage({
-          enhanceApp: App => props => sheet.collectStyles(<App {...props} />),
+          enhanceApp: (App) => (props) => sheet.collectStyles(<App {...props} />),
         })
 
       const initialProps = await Document.getInitialProps(ctx)
@@ -55,6 +53,8 @@ export default class MyDocument extends Document {
           <link rel="icon" sizes="256x256" href="/ana.png" />
           <link rel="apple-touch-icon" href="/ana.png" />
           <meta name="theme-color" content="#2F4858" />
+          <meta name="application-name" content="AnaState.com" />
+          <meta name="apple-mobile-web-app-capable" content="yes" />
           <link rel="apple-touch-startup-image" href="/ana.png" />
 
           <script
