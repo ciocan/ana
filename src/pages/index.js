@@ -1,3 +1,10 @@
+import { Meta } from '@components'
+
 export default function Home() {
-  return <>ana</>
+  return (
+    <>
+      <Meta />
+      ana
+    </>
+  )
 }

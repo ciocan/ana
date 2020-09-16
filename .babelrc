@@ -9,9 +9,9 @@
       {
         "root": ["."],
         "alias": {
-          "~components": "./src/components",
-          "~lib": "./src/lib",
-          "~icons": "./src/icons"
+          "@components": "./src/components",
+          "@lib": "./src/lib",
+          "@svg": "./src/svg"
         }
       },
       "@babel/plugin-proposal-optional-chaining"
