@@ -17,11 +17,7 @@ export function Layout({ children }) {
         minHeight="100vh"
       >
         <Header />
-        <Flex
-          as="main"
-          direction="column"
-          justifyContent="flex-start"
-        >
+        <Flex as="main" direction="column" justifyContent="flex-start">
           {children}
         </Flex>
         <Footer />

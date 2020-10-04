@@ -33,33 +33,6 @@ export default class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head>
-          <style>{`
-            html { height: 100%; }
-            body {
-              margin: 0;
-              padding: 0;
-              box-sizing: border-box;
-              font-size: 100%;
-              min-height: 100%;
-
-              @font-face {
-                font-family: "TeX Gyre Regular";
-                src: url("/fonts/texgyreadventor-regular.otf") format("opentype");
-              }
-              @font-face {
-                font-family: "TeX Gyre Italic";
-                src: url("/fonts/texgyreadventor-italic.otf") format("opentype");
-              }
-              @font-face {
-                font-family: "TeX Gyre Bold";
-                src: url("/fonts/texgyreadventor-bold.otf") format("opentype");
-              }
-              @font-face {
-                font-family: "TeX Gyre Bold Italic";
-                src: url("/fonts/texgyreadventor-bolditalic.otf") format("opentype");
-              }
-            }
-          `}</style>
           <script
             async={true}
             src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}

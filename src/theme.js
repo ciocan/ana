@@ -1,6 +1,10 @@
 import theme from '@chakra-ui/theme'
 
-const fonts = { ...theme.fonts, body: `TeX Gyre Regular` }
+const fonts = {
+  ...theme.fonts,
+  body: `tex_gyre_adventor_regular`,
+}
+
 const colors = {
   ...theme.colors,
   red: '#DB2721',
