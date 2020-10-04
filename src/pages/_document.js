@@ -1,5 +1,5 @@
 import React from 'react'
-import Document, { Head, Main, NextScript } from 'next/document'
+import Document, { Html, Head, Main, NextScript } from 'next/document'
 import { ServerStyleSheet } from 'styled-components'
 import { GA_TRACKING_ID } from '../lib/gtag'
 
@@ -31,24 +31,39 @@ export default class MyDocument extends Document {
 
   render() {
     return (
-      <html lang="en">
+      <Html lang="en">
         <Head>
           <style>{`
+            html { height: 100%; }
             body {
               margin: 0;
               padding: 0;
               box-sizing: border-box;
               font-size: 100%;
+              min-height: 100%;
+
+              @font-face {
+                font-family: "TeX Gyre Regular";
+                src: url("/fonts/texgyreadventor-regular.otf") format("opentype");
+              }
+              @font-face {
+                font-family: "TeX Gyre Italic";
+                src: url("/fonts/texgyreadventor-italic.otf") format("opentype");
+              }
+              @font-face {
+                font-family: "TeX Gyre Bold";
+                src: url("/fonts/texgyreadventor-bold.otf") format("opentype");
+              }
+              @font-face {
+                font-family: "TeX Gyre Bold Italic";
+                src: url("/fonts/texgyreadventor-bolditalic.otf") format("opentype");
+              }
             }
           `}</style>
           <script
             async={true}
             src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
           />
-          <link
-            href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,700&display=swap"
-            rel="stylesheet"
-          ></link>
           <link rel="manifest" href="/manifest.json" />
           <link rel="icon" sizes="256x256" href="/ana.png" />
           <link rel="apple-touch-icon" href="/ana.png" />
@@ -72,7 +87,7 @@ export default class MyDocument extends Document {
           <Main />
           <NextScript />
         </body>
-      </html>
+      </Html>
     )
   }
 }

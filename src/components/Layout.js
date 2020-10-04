@@ -12,12 +12,16 @@ export function Layout({ children }) {
       </Head>
       <Grid
         as="article"
-        minHeight="100%"
         gridTemplateRows="auto 1fr auto"
         gridTemplateColumns="100%"
+        minHeight="100vh"
       >
         <Header />
-        <Flex as="main" p="4" direction="column" justifyContent="flex-start" height="100%">
+        <Flex
+          as="main"
+          direction="column"
+          justifyContent="flex-start"
+        >
           {children}
         </Flex>
         <Footer />

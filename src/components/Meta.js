@@ -1,8 +1,8 @@
 import PropTypes from 'prop-types'
 import Head from 'next/head'
 
-const defaultDescription = 'Ana State personal portfolio website'
 const defaultTitle = 'Ana State'
+const defaultDescription = 'Ana State personal portfolio website'
 
 export function Meta({ title, description, url }) {
   return (
@@ -19,7 +19,7 @@ export function Meta({ title, description, url }) {
 }
 
 Meta.propTypes = {
-  title: PropTypes.string.isRequired,
+  title: PropTypes.string,
   description: PropTypes.string,
   url: PropTypes.string,
 }

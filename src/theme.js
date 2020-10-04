@@ -1,8 +1,9 @@
 import theme from '@chakra-ui/theme'
 
-const fonts = { ...theme.fonts, mono: `'Menlo', monospace` }
+const fonts = { ...theme.fonts, body: `TeX Gyre Regular` }
 const colors = {
   ...theme.colors,
+  red: '#DB2721',
 }
 
 const breakpoints = ['30em', '48em', '62em', '80em']
