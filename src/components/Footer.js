@@ -1,8 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
 import { down, up } from 'styled-breakpoints'
-import { LinkedinSquare } from 'styled-icons/boxicons-logos/LinkedinSquare'
-import { FilePdf } from 'styled-icons/boxicons-solid/FilePdf'
 
 export const Footer = () => (
   <a id="contact">
@@ -14,41 +12,39 @@ export const Footer = () => (
       </Title>
       <ContactContainer>
         <Text>
-          <h1>Contact</h1>
-          <h2>‭+44 7388 731 630‬</h2>
-          <h2>
-            <a href="mailto:hello@anastate.com">hello@anastate.com</a>
-          </h2>
-        </Text>
-        <Text>
-          <h1>Resume</h1>
-          <Links>
-            <a
-              href="https://www.linkedin.com/in/anastate/"
-              rel="noopener noreferrer"
-              target="_blank"
-              aria-label="Linkedin Profile"
-            >
-              <LinkedinIcon />
-            </a>
-            <a
-              href="Senior_Product Designer_Resume_Ana_State.pdf"
-              target="_blank"
-              aria-label="PDF Resume"
-            >
-              <PdfIcon />
-            </a>
-          </Links>
+            <a href="mailto:hello@anastate.com" target="_blank">Contact me</a>
         </Text>
       </ContactContainer>
-      <Copy>&copy; Ana State 2019</Copy>
+
+      <BottomContainer>
+        <Copy>&copy; Ana State 2019</Copy>
+        <Links>
+          <a
+            href="https://www.linkedin.com/in/anastate/"
+            rel="noopener noreferrer"
+            target="_blank"
+            aria-label="Linkedin Profile"
+          >
+            Linkedin
+          </a>
+
+          <a href="mailto:hello@anastate.com" target="_blank">Email</a>
+          <a
+            href="Senior_Product Designer_Resume_Ana_State.pdf"
+            target="_blank"
+            aria-label="PDF Resume"
+          >
+          Resume
+          </a>
+        </Links>
+        </BottomContainer>
     </Container>
   </a>
 )
 
 const ContactContainer = styled.div`
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   width: 100%;
   max-width: 1000px;
   margin-bottom: 50px;
@@ -65,31 +61,63 @@ const Text = styled.div`
   }
 
   ${up('md')} {
-    margin: 0 40px;
+    margin: 40px 40px;
   }
 
-  & h1 {
-    font-size: 1.6rem;
+  a {
+    border: 1px solid white;
+    color: white;
+    text-decoration: none;
+    padding: 22px 55px;
+    border-radius: 65px;
+  }
+`
 
-    ${down('sm')} {
-      font-size: 1.2rem;
-    }
+const BottomContainer = styled.div`
+  display: flex;
+  justify-items: center;
+  justify-content: space-between;
+  min-width: 100%;
+  box-sizing: border-box;
+  margin-top: 100px;
+
+  ${up('md')} {
+    padding: 0 140px;
   }
 
-  & h2 {
-    font-weight: normal;
-    font-size: 1.3rem;
-    line-height: 1rem;
-
-    ${down('sm')} {
-      font-size: 1rem;
-    }
+  ${down('sm')} {
+    flex-direction: column-reverse;
+    align-items: center;
   }
 `
 
 const Links = styled.div`
   display: flex;
-  justify-content: flex-end;
+  align-items: center;
+
+  a {
+    color: white;
+    text-decoration: none;
+  }
+
+  a:after {
+    content: "";
+    display: inline-block;
+    margin: 0 15px;
+    margin-bottom: 2px;
+    width: 6px;
+    height: 6px;
+    border-radius: 6px;
+    background-color: #C6C6CC;
+  }
+
+  a:last-child:after {
+    content: none;
+  }
+
+  ${down('sm')} {
+    margin-bottom: 40px;
+  }
 `
 
 const Container = styled.footer`
@@ -98,11 +126,11 @@ const Container = styled.footer`
   align-items: center;
   margin-top: 7rem;
   background: white;
-  color: #2f4858;
+  color: white;
+  background-color: #2f4858;
   padding: 20px;
-  flex-shrink: 0;
   padding-bottom: 40px;
-  padding-top: 40px;
+  padding-top: 140px;
 
   ${down('sm')} {
     margin-top: 5rem;
@@ -130,16 +158,6 @@ const Title = styled.h3`
     font-size: 1.25rem;
     line-height: 2rem;
   }
-`
-
-const LinkedinIcon = styled(LinkedinSquare)`
-  width: 42px;
-  color: #2f4858;
-`
-
-const PdfIcon = styled(FilePdf)`
-  width: 42px;
-  color: #2f4858;
 `
 
 const Copy = styled.p`
