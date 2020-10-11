@@ -9,8 +9,8 @@ import Inktank from '~components/pages/work/inktank/images/inktank.png'
 import {
   HomeContainer,
   Explore,
+  MouseIcon,
   ExploreText,
-  ArrowIcon,
   Description,
   Headline,
   Projects,
@@ -33,8 +33,8 @@ export default () => (
         </Description>
       </HomeContainer>
       <Explore href="#work">
-        <ExploreText>Explore projects</ExploreText>
-        <ArrowIcon />
+        <MouseIcon />
+        <ExploreText>Scroll to explore projects</ExploreText>
       </Explore>
       <a id="work" />
       <Projects>
@@ -42,11 +42,10 @@ export default () => (
           icon={<Security />}
           color="#44AB96"
           title="eSecurity redesign"
-          year="2019"
           type="Mobile App"
           link="/work/security"
         >
-          Redesigning the onboarding mobile experience of a security banking app used to sign &
+          Redesigning the onboarding experience of a security banking app used to sign &
           authorize transactions.
         </Project>
 
@@ -54,20 +53,17 @@ export default () => (
           icon={<Research />}
           color="#F2C53B"
           title="Sales meets Research & Data Science"
-          year="2019"
           type="Research"
           link="/work/research"
         >
-          Leverage UX Research and Analytics to build better tools for a more effective
-          cross-selling process.
+          Leverage UX Research and Analytics to redesign internal tools for a better cross-selling process.
         </Project>
 
         <Project
           icon={<Image src={Inktank} alt="Ink Tank" />}
           color="#4484AB"
           title="Ink Tank"
-          year="2018"
-          type="PWA App"
+          type="Progressive Web App"
           link="/work/inktank"
         >
           Build a PWA platform to help tattoo seekers find tattoo inspiration, and the right tattoo

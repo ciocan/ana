@@ -7,13 +7,11 @@ export const Project = ({ icon, color, title, year, type, children, link = '#' }
   <Container color={color}>
     <IconContainer>{icon}</IconContainer>
     <ContentContainer>
+      <Type>{type}</Type>
       <Title>{title}</Title>
-      <Type>
-        <b>{year}</b> | {type}
-      </Type>
       <Content>{children}</Content>
       <Link href={link}>
-        See Process <ArrowIcon />
+        See project <ArrowIcon />
       </Link>
     </ContentContainer>
   </Container>
@@ -78,7 +76,7 @@ const ContentContainer = styled.div`
   flex-direction: column;
   margin-left: 80px;
   width: 50%;
-  padding: 80px 0;
+  justify-content: center;
 
   ${down('lg')} {
     width: auto;
@@ -98,7 +96,10 @@ const Title = styled.h2`
   font-style: normal;
   font-weight: bold;
   font-size: 2rem;
-  line-height: 2rem;
+  line-height: 2.3rem;
+  margin: 0;
+  margin-top: 0.75rem;
+  margin-bottom: 1.5rem;
 
   ${down('sm')} {
     font-size: 1.6rem;
@@ -111,11 +112,9 @@ const Type = styled.h4`
   font-size: 1.2rem;
   letter-spacing: -0.03em;
   margin: 0;
-  margin-top: -1rem;
 
   ${down('sm')} {
     font-size: 1rem;
-    margin-top: -0.8rem;
   }
 `
 const Content = styled.p`
@@ -123,6 +122,7 @@ const Content = styled.p`
   font-weight: normal;
   font-size: 1.375rem;
   line-height: 1.75rem;
+  margin: 0;
 
   ${down('sm')} {
     font-size: 20px;
@@ -136,14 +136,13 @@ const Link = styled.a`
   font-size: 1.3rem;
   display: flex;
   align-items: center;
-  letter-spacing: 0.16em;
-  text-transform: capitalize;
   color: #070e55;
   text-decoration: none;
-  margin-top: auto;
+  margin-top: 3.75rem;
   border: 1px solid #070e55;
+  border-radius: 65px;
   padding: 10px 20px;
-  width: 220px;
+  width: 140px;
 
   & :hover {
     font-weight: bold;
@@ -178,7 +177,7 @@ const Link = styled.a`
 `
 
 const ArrowIcon = styled(Arrow)`
-  width: 2rem;
+  width: 1.1rem;
 
   ${down('sm')} {
     width: 28px;

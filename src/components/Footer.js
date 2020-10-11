@@ -71,6 +71,11 @@ const Text = styled.div`
     padding: 22px 55px;
     border-radius: 65px;
   }
+
+  a:hover {
+    font-weight: bold;
+    border: 2px solid white;
+  }
 `
 
 const BottomContainer = styled.div`

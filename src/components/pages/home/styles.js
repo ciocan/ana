@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { down } from 'styled-breakpoints'
-import Arrow from '~icons/arrow-down.svg'
+import MouseScroll from '~icons/mouse-scroll.svg'
 
 export const HomeContainer = styled.div``
 
@@ -38,24 +38,12 @@ export const Description = styled.p`
 export const Explore = styled.a`
   display: inline-flex;
   align-items: center;
-  margin-top: 40px;
-  padding: 1.5rem;
-  border: 1px solid white;
+  margin-top: 80px;
   text-decoration: none;
-
-  ${down('sm')} {
-    display: flex;
-    padding: 20px;
-    justify-content: space-between;
-    margin-top: 80px;
-  }
 `
 
 export const ExploreText = styled.span`
-  letter-spacing: 0.16em;
-  text-transform: capitalize;
-  font-size: 1.8rem;
-  margin-right: 30px;
+  font-size: 1.5rem;
   color: #fff;
 
   ${down('sm')} {
@@ -63,9 +51,8 @@ export const ExploreText = styled.span`
   }
 `
 
-export const ArrowIcon = styled(Arrow)`
-  width: 30px;
-  height: 30px;
+export const MouseIcon = styled(MouseScroll)`
+  margin-right: 16px;
 
   ${down('sm')} {
     width: 24px;
