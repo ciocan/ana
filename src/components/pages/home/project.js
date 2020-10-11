@@ -44,7 +44,7 @@ const Container = styled.div`
 
   ${down('sm')} {
     padding: 0;
-    margin-bottom: 40px;
+    margin-bottom: 80px;
   }
 `
 
@@ -103,6 +103,7 @@ const Title = styled.h2`
 
   ${down('sm')} {
     font-size: 1.6rem;
+    margin-bottom: 0;
   }
 `
 
@@ -115,6 +116,7 @@ const Type = styled.h4`
 
   ${down('sm')} {
     font-size: 1rem;
+    margin-top: 30px;
   }
 `
 const Content = styled.p`
@@ -126,7 +128,7 @@ const Content = styled.p`
 
   ${down('sm')} {
     font-size: 20px;
-    margin: 30px 0;
+    margin: 20px 0;
   }
 `
 
@@ -168,6 +170,7 @@ const Link = styled.a`
     border: 1px solid #fff;
     padding: 20px;
     width: 60%;
+    margin-top: 1.2rem;
 
     & :hover {
       font-weight: bold;
