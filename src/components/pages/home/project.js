@@ -3,7 +3,7 @@ import styled, { css } from 'styled-components'
 import { down } from 'styled-breakpoints'
 import Arrow from '~icons/arrow-right.svg'
 
-export const Project = ({ icon, color, title, year, type, children, link = '#' }) => (
+export const Project = ({ icon, color, title, type, children, link = '#' }) => (
   <Container color={color}>
     <IconContainer>{icon}</IconContainer>
     <ContentContainer>

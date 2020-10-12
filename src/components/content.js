@@ -30,7 +30,7 @@ export const Content = styled.div`
 
 export const NextProject = ({ to }) => (
   <Link href={to}>
-    <LinkTest>See next project</LinkTest>
+    <LinkTest>Next project</LinkTest>
     <ArrowIcon />
   </Link>
 )
@@ -45,11 +45,11 @@ const Link = styled.a`
   font-size: 1.5rem;
   border: 1px solid white;
   padding: 20px;
-  text-transform: uppercase;
   text-align: center;
-  width: 360px;
+  width: 260px;
   margin: 0 auto;
   margin-top: 100px;
+  border-radius: 65px;
 
   & :hover {
     border: 2px solid white;
