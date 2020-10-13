@@ -6,13 +6,15 @@ export const Footer = () => (
   <a id="contact">
     <Container>
       <Title>
-        Curious to see more projects?
+        Want to collaborate?
         <br />
         Get in touch.
       </Title>
       <ContactContainer>
         <Text>
-            <a href="mailto:hello@anastate.com" target="_blank">Contact me</a>
+          <a href="mailto:hello@anastate.com" target="_blank">
+            Contact me
+          </a>
         </Text>
       </ContactContainer>
 
@@ -28,16 +30,18 @@ export const Footer = () => (
             Linkedin
           </a>
 
-          <a href="mailto:hello@anastate.com" target="_blank">Email</a>
+          <a href="mailto:hello@anastate.com" target="_blank">
+            Email
+          </a>
           <a
             href="Senior_Product Designer_Resume_Ana_State.pdf"
             target="_blank"
             aria-label="PDF Resume"
           >
-          Resume
+            Resume
           </a>
         </Links>
-        </BottomContainer>
+      </BottomContainer>
     </Container>
   </a>
 )

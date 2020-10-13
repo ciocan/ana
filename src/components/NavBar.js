@@ -50,7 +50,7 @@ const List = styled.ul`
   list-style-type: none;
   display: flex;
   width: 100%;
-  padding: 20px 40px;
+  padding: 20px 140px;
   justify-content: flex-end;
 
   ${down('sm')} {
