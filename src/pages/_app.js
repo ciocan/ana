@@ -9,7 +9,7 @@ export default class MyApp extends App {
   render() {
     const { Component, pageProps, ...rest } = this.props
     return (
-      <ChakraProvider theme={theme}>
+      <ChakraProvider resetCSS theme={theme}>
         <CSSReset />
         <Layout>
           <Component {...pageProps} {...rest} />

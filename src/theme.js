@@ -1,13 +1,21 @@
-import theme from '@chakra-ui/theme'
+import { extendTheme } from '@chakra-ui/core'
 
 const fonts = {
-  ...theme.fonts,
   body: `tex_gyre_adventor_regular`,
+  // body: "tex_gyre_adventor_bold"
 }
 
 const colors = {
-  ...theme.colors,
-  red: '#DB2721',
+  red: '#C2211C',
+  primaryBlack: '#102443',
+}
+
+const components = {
+  Heading: {
+    baseStyle: {
+      fontFamily: 'tex_gyre_adventor_bold',
+    },
+  },
 }
 
 const breakpoints = ['30em', '48em', '62em', '80em']
@@ -17,11 +25,11 @@ breakpoints.md = breakpoints[1]
 breakpoints.lg = breakpoints[2]
 breakpoints.xl = breakpoints[3]
 
-const appTheme = {
-  ...theme,
+const appTheme = extendTheme({
   fonts,
   breakpoints,
   colors,
-}
+  components,
+})
 
 export default appTheme
