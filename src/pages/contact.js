@@ -10,14 +10,13 @@ export default function Home() {
         mx="auto"
         px={['10', '0']}
         mt={['100px', '175px']}
-        mb={["150px", "400px"]}
+        mb={['150px', '400px']}
       >
         <Heading
           mb={[8, 0]}
           ml={[-2, -5]}
           lineHeight={['96px', '288px']}
           fontSize={['128px', '288px']}
-          color="primaryBlack"
         >
           HE
         </Heading>
@@ -42,11 +41,12 @@ export default function Home() {
         <Heading color="red" my="8">
           Let’s talk all things product design.
         </Heading>
-        <Text fontSize="xl" my="6" color="primaryBlack">
+        <Text fontSize="xl" my="6">
           Whether you’re building a new product or improving the user experience of an existing one,
           let’s talk. Reach out by hitting the button below.
         </Text>
         <Link
+          color="primaryBlack"
           borderColor="primaryBlack"
           borderStyle="solid"
           borderWidth="1px"

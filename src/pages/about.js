@@ -25,7 +25,7 @@ export default function Home() {
           />
         </Heading>
         <Heading color="red">A designer with a knack for psychology.</Heading>
-        <Text fontSize="xl" my="6" color="primaryBlack">
+        <Text fontSize="xl" my="6">
           Hey, I’m{' '}
           <Text fontWeight="bold" display="inline" color="red">
             Ana
@@ -33,19 +33,13 @@ export default function Home() {
           , a technical product designer who cares deeply about accesibility, inclusiveness & human
           psychology and believes in design that serves both people and businesses.
         </Text>
-        <Text fontSize="xl" color="primaryBlack">
+        <Text fontSize="xl">
           Performant design that’s shippable, comes from collaboration between disciplines.
         </Text>
       </Box>
       <Box backgroundColor="primaryBlack" mt="100px" mb={['32', '64']}>
-        <Box
-          color="white"
-          w={['100%', '80%', '600px']}
-          mx="auto"
-          px={['10', '0']}
-          py={['16', '136px']}
-        >
-          <Heading>How I can help you</Heading>
+        <Box w={['100%', '80%', '600px']} mx="auto" px={['10', '0']} py={['16', '136px']}>
+          <Heading color="white">How I can help you</Heading>
           <SimpleGrid columns={['1', '2']} spacing={[16, 20]} mt={['16', '32']}>
             <HelpBox title="Discovery">
               Research, analytics and usability testing are tools I use to understand user behaviour
@@ -77,6 +71,8 @@ const HelpBox = ({ title, children }) => (
     <Text color="red" fontWeight="bold" fontSize="xl" mb="4">
       {title}
     </Text>
-    <Text fontSize="md">{children}</Text>
+    <Text fontSize="md" color="white">
+      {children}
+    </Text>
   </Box>
 )

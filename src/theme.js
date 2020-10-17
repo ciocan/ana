@@ -12,21 +12,19 @@ const colors = {
 const components = {
   Heading: {
     baseStyle: {
+      color: 'primaryBlack',
       fontFamily: 'tex_gyre_adventor_bold',
+    },
+  },
+  Text: {
+    baseStyle: {
+      color: 'primaryBlack',
     },
   },
 }
 
-const breakpoints = ['30em', '48em', '62em', '80em']
-
-breakpoints.sm = breakpoints[0]
-breakpoints.md = breakpoints[1]
-breakpoints.lg = breakpoints[2]
-breakpoints.xl = breakpoints[3]
-
 const appTheme = extendTheme({
   fonts,
-  breakpoints,
   colors,
   components,
 })
