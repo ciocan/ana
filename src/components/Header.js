@@ -1,4 +1,4 @@
-import { HStack, Box, Text, Link as ChakraLink } from '@chakra-ui/core'
+import { HStack, Box, Text } from '@chakra-ui/core'
 import NextLink from 'next/link'
 import styled from 'styled-components'
 
@@ -45,15 +45,27 @@ export function Header() {
       position="relative"
       fontSize={['xs', 'md']}
     >
-      <Logo mr="auto">
-        <Text as="b">ana</Text>
-        <Text as="span">state</Text>
-      </Logo>
+      <NextLink href="/">
+        <a>
+          <Logo mr="auto">
+            <Text as="b">ana</Text>
+            <Text as="span">state</Text>
+          </Logo>
+        </a>
+      </NextLink>
       <HStack spacing="8" textTransform="uppercase">
-        <Text>Work</Text>
-        <Text>About</Text>
-        <Text>Contact</Text>
+        <Link title="Work" to="/#work" />
+        <Link title="About" to="/about" />
+        <Link title="Contact" to="/contact" />
       </HStack>
     </HStack>
+  )
+}
+
+const Link = ({ title, to }) => {
+  return (
+    <NextLink href={to}>
+      <a>{title}</a>
+    </NextLink>
   )
 }

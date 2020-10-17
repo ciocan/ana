@@ -6,7 +6,7 @@ export default function Home() {
     <>
       <Meta />
       <Box maxW="1000px" mx="auto" bg="yellow.100" mt="300px">
-        home
+        contact
       </Box>
     </>
   )
