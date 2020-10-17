@@ -1,8 +1,7 @@
 import { extendTheme } from '@chakra-ui/core'
 
 const fonts = {
-  body: `tex_gyre_adventor_regular`,
-  // body: "tex_gyre_adventor_bold"
+  body: 'tex_gyre_adventor_regular',
 }
 
 const colors = {

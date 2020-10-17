@@ -6,7 +6,7 @@ export default function Home() {
     <>
       <Meta />
       <Box w={['100%', '80%', '600px']} mx="auto" px={['10', '0']} mt={['100px', '175px']}>
-        <Heading mb={[8,0]} ml={[-2, -5]}>
+        <Heading mb={[8, 0]} ml={[-2, -5]}>
           <Box as="span" fontSize={['128px', '288px']} color="primaryBlack">
             BI
           </Box>
