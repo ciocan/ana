@@ -16,10 +16,10 @@ export function Footer() {
         fontSize={['sm', 'xs']}
         divider={<Box bg="#C6C6CC" w="6px" h="6px" rounded="6px" />}
       >
-        <Link rel="nofollow" target="_blank" href="https://linkedin.com/in/anastate">
+        <Link rel="noreferrer" target="_blank" href="https://linkedin.com/in/anastate">
           Linkedin
         </Link>
-        <Link rel="nofollow" target="_blank" href="mailto:hello@anastate.com">
+        <Link rel="noreferrer" target="_blank" href="mailto:hello@anastate.com">
           Email
         </Link>
         <Link target="_blank" href="/Ana_State_Resume_UX_UI_Designer_2019.pdf">

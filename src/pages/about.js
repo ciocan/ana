@@ -27,7 +27,7 @@ export default function Home() {
         <Heading color="red">A designer with a knack for psychology.</Heading>
         <Text fontSize="xl" my="6">
           Hey, I’m{' '}
-          <Text fontWeight="bold" display="inline" color="red">
+          <Text as="span" fontWeight="bold" display="inline" color="red">
             Ana
           </Text>
           , a technical product designer who cares deeply about accesibility, inclusiveness & human

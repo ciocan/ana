@@ -21,7 +21,7 @@ export default function Home() {
           people.
         </Heading>
         <Text fontSize="xl" my="6">
-          <Text fontWeight="bold" display="inline" color="red">
+          <Text as="span" fontWeight="bold" display="inline" color="red">
             Ana
           </Text>{' '}
           is a Londond based technical product designer, raving about the connection between human

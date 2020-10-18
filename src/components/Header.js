@@ -1,5 +1,6 @@
 import { HStack, Box, Text } from '@chakra-ui/core'
 import NextLink from 'next/link'
+import { useRouter } from 'next/router'
 import styled from 'styled-components'
 
 const Logo = styled(Box)`
@@ -45,15 +46,17 @@ export function Header() {
       position="relative"
       fontSize={['xs', 'md']}
     >
-      <NextLink href="/">
-        <a>
-          <Logo mr="auto">
-            <Text as="b">ana</Text>
-            <Text as="span">state</Text>
-          </Logo>
-        </a>
-      </NextLink>
-      <HStack spacing="8" textTransform="uppercase">
+      <Box marginRight="auto">
+        <NextLink href="/">
+          <a>
+            <Logo mr="auto" as="span">
+              <Text as="b">ana</Text>
+              <Text as="span">state</Text>
+            </Logo>
+          </a>
+        </NextLink>
+      </Box>
+      <HStack spacing={[4, 8]} textTransform="uppercase">
         <Link title="Work" to="/#work" />
         <Link title="About" to="/about" />
         <Link title="Contact" to="/contact" />
@@ -63,9 +66,19 @@ export function Header() {
 }
 
 const Link = ({ title, to }) => {
+  const router = useRouter()
+  const selected =
+    router.asPath === to || (router.asPath === '/' && to === '/#work') ? 'selected' : ''
+
   return (
     <NextLink href={to}>
-      <a>{title}</a>
+      <Text
+        as="a"
+        _hover={{ textDecoration: 'underline', cursor: 'pointer', color: 'red' }}
+        variant={selected}
+      >
+        {title}
+      </Text>
     </NextLink>
   )
 }

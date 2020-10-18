@@ -20,6 +20,11 @@ const components = {
     baseStyle: {
       color: 'primaryBlack',
     },
+    variants: {
+      selected: {
+        color: 'red',
+      },
+    },
   },
 }
 
