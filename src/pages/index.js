@@ -7,8 +7,8 @@ export default function Home() {
   return (
     <>
       <Meta />
-      <Box w={['100%', '80%', '600px']} mx="auto" px={['10', '0']} mt={['100px', '175px']}>
-        <Heading color="red" my="8">
+      <Box w={['100%', '80%', '600px']} mx="auto" px={['16', '0']} mt={['40px', '175px']}>
+        <Heading color="red" my="8" mb={[12, 0]}>
           To design is to
           <Text display="inline" color="primaryBlack">
             {' '}
@@ -23,19 +23,22 @@ export default function Home() {
           is a Londond based technical product designer, raving about the connection between human
           psychology, business and design.
         </Text>
-        <HStack spacing="4" mt="150px">
+        <HStack spacing="4" mt={['50px', '150px']}>
           <MouseIcon width="20px" />
-          <Text fontSize="xl">Scroll to explore projects</Text>
+          <Text fontSize={['md', 'xl']}>Scroll to explore projects</Text>
         </HStack>
       </Box>
       <Box
         w={['100%', '1000px']}
-        mt={['100px', '200px']}
+        mt={['120px', '200px']}
         mb={['150px', '400px']}
-        px={['10', '10']}
+        px={['16', '10']}
         mx="auto"
       >
-        <Heading fontSize="6xl">Work.</Heading>
+        <Box id="work" pt="40px" />
+        <Heading fontSize="6xl" mb={['80px', '120px']}>
+          Work.
+        </Heading>
         <Project
           type="Fintech startup"
           name="Web app integration"
@@ -56,7 +59,7 @@ export default function Home() {
           type="eSecurity"
           name="Mobile app redesign"
           description="A project focused on redesigning the onboarding experience of a security banking  app."
-          imageUrl="/images/phone1.png"
+          imageUrl="/images/phone2.png"
           url="/work/mobile-app-redesign"
         />
         <Project
@@ -79,29 +82,41 @@ const Project = ({ imageUrl, type, name, description, url, variant = 'left' }) =
       justifyContent="space-between"
       mb={['120px', '180px']}
     >
-      <VStack alignItems="flex-start" justifyContent="space-around" w={['100%', '30%']}>
+      <VStack
+        alignItems="flex-start"
+        justifyContent="center"
+        w={['100%', '60%']}
+        mr={[0, '60px']}
+        mt={['20px', 0]}
+      >
         <Text color="grey">{type}</Text>
-        <Heading mb="4" fontSize="4xl">
+        <Heading mb="5" fontSize="4xl">
           {name}
         </Heading>
-        <Text mb="8">{description}</Text>
+        <Text mb={[10, '60px']}>{description}</Text>
         <ProjectLink href={url}>See Project</ProjectLink>
       </VStack>
-      <Box>
-        <Image src={imageUrl} fit="fit" alt={name} />
+      <Box position="relative" right={[0, '-22px']}>
+        <Image
+          src={imageUrl}
+          fit="fit"
+          alt={name}
+          ml={[-2, 0]}
+          transform={['scale(1.3)', 'scale(1.2)']}
+        />
       </Box>
     </Stack>
   ) : (
-    <Stack justifyContent="space-between" mb={['120px', '180px']}>
-      <Box pr={[0, 20]}>
-        <Image src={imageUrl} fit="fit" alt={name} />
+    <Stack direction={['column', 'row']} justifyContent="space-between" mb={['120px', '180px']}>
+      <Box pr={[0, 20]} mb={[10, 0]} ml={[0, '-70px']}>
+        <Image src={imageUrl} fit="fit" alt={name} transform={['scale(1.3)', 'scale(1)']} />
       </Box>
-      <VStack alignItems="flex-start" justifyContent="space-around" w={['100%', '30%']}>
+      <VStack alignItems="flex-start" justifyContent="center" w={['100%', '40%']}>
         <Text color="grey">{type}</Text>
-        <Heading mb="4" fontSize="4xl">
+        <Heading mb="5" fontSize="4xl">
           {name}
         </Heading>
-        <Text mb="8">{description}</Text>
+        <Text mb={[10, '60px']}>{description}</Text>
         <ProjectLink href={url}>See Project</ProjectLink>
       </VStack>
     </Stack>

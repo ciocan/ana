@@ -14,7 +14,7 @@ const fonts = {
 
 const colors = {
   homeBg: '#FDFBF6',
-  red: '#C2211C',
+  red: '#CE3C50',
   primaryBlack: '#102443',
   grey: '#3F3F3F',
 }
@@ -46,7 +46,7 @@ const components = {
         borderStyle: 'solid',
         borderWidth: '1px',
         borderRadius: '65px',
-        px: '10',
+        px: 8,
         py: '3',
         _hover: {
           textDecoration: 'none',
