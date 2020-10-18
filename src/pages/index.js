@@ -6,7 +6,7 @@ import ArrowIcon from '../svg/arrow.svg'
 export default function Home() {
   return (
     <>
-      <Meta />
+      <Meta title="Technical Product Designer | Ana State" />
       <VStack
         w={['100%', '80%', '600px']}
         h={['calc(100vh - 50px)', 'calc(100vh - 120px)']}

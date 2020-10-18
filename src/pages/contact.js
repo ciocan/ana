@@ -4,7 +4,7 @@ import { Box, Heading, Text, Link } from '@chakra-ui/core'
 export default function Home() {
   return (
     <>
-      <Meta />
+      <Meta title="Contact Ana State" />
       <Box
         w={['100%', '80%', '600px']}
         mx="auto"

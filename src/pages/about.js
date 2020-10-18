@@ -4,7 +4,7 @@ import { Box, Heading, Text, SimpleGrid } from '@chakra-ui/core'
 export default function Home() {
   return (
     <>
-      <Meta />
+      <Meta title="About Ana State" />
       <Box w={['100%', '80%', '600px']} mx="auto" px={['10', '0']} mt={['100px', '175px']}>
         <Heading mb={[8, 0]} ml={[-2, -5]}>
           <Box as="span" fontSize={['128px', '288px']} color="primaryBlack">
