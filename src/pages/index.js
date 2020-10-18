@@ -7,8 +7,16 @@ export default function Home() {
   return (
     <>
       <Meta />
-      <Box w={['100%', '80%', '600px']} mx="auto" px={['16', '0']} mt={['40px', '100px']}>
-        <Heading color="red" my="8" mb={[8, 0]} mt={[16, 0]}>
+      <VStack
+        w={['100%', '80%', '600px']}
+        h={['calc(100vh - 50px)', 'calc(100vh - 120px)']}
+        px={['16', '0']}
+        mx="auto"
+        alignItems="flex-start"
+        justifyContent="space-between"
+        pos="relative"
+      >
+        <Heading color="red" mb="8" mt="auto">
           To design is to
           <Text display="inline" color="primaryBlack">
             {' '}
@@ -16,25 +24,20 @@ export default function Home() {
           </Text>{' '}
           people.
         </Heading>
-        <Text fontSize="xl" my="6">
+        <Text fontSize="xl" my="6" mb="auto">
           <Text as="span" fontWeight="bold" display="inline" color="red">
             Ana
           </Text>{' '}
           is a Londond based technical product designer, raving about the connection between human
           psychology, business and design.
         </Text>
-        <HStack spacing="4" mt={['50px', '80px']}>
+        <HStack justifySelf="flex-end" mt="auto" mb="20">
           <MouseIcon width="20px" />
+          <div className="icon-scroll"></div>
           <Text fontSize={['md', 'xl']}>Scroll to explore projects</Text>
         </HStack>
-      </Box>
-      <Box
-        w={['100%', '1000px']}
-        mt={['120px', '200px']}
-        mb={['150px', '400px']}
-        px={['16', '10']}
-        mx="auto"
-      >
+      </VStack>
+      <Box w={['100%', '1000px']} mt={[10, 20]} mb={['150px', '400px']} px={['16', '10']} mx="auto">
         <Box id="work" pt="40px" />
         <Heading fontSize="6xl" mb={['80px', '120px']}>
           Work.
