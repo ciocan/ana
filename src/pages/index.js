@@ -31,7 +31,7 @@ export default function Home() {
           is a Londond based technical product designer, raving about the connection between human
           psychology, business and design.
         </Text>
-        <HStack justifySelf="flex-end" mt="auto" mb="20">
+        <HStack justifySelf="flex-end" mt="auto" mb={[40, 20]}>
           <MouseScroll />
           <Text fontSize={['md', 'xl']}>Scroll to explore projects</Text>
         </HStack>
