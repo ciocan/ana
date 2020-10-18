@@ -1,6 +1,6 @@
 import { Meta } from '@components'
 import { Box, Heading, HStack, Text, Image, VStack, Stack, Link } from '@chakra-ui/core'
-import MouseIcon from '../svg/mouse.svg'
+import styled from 'styled-components'
 import ArrowIcon from '../svg/arrow.svg'
 
 export default function Home() {
@@ -32,8 +32,7 @@ export default function Home() {
           psychology, business and design.
         </Text>
         <HStack justifySelf="flex-end" mt="auto" mb="20">
-          <MouseIcon width="20px" />
-          <div className="icon-scroll"></div>
+          <MouseScroll />
           <Text fontSize={['md', 'xl']}>Scroll to explore projects</Text>
         </HStack>
       </VStack>
@@ -132,3 +131,37 @@ const ProjectLink = ({ href, children }) => (
     <ArrowIcon width="20px" />
   </HStack>
 )
+
+const MouseScroll = styled.div`
+  width: 25px;
+  height: 42px;
+  margin-right: 8px;
+  box-shadow: inset 0 0 0 1px #000;
+  border-radius: 25px;
+  position: relative;
+
+  &:before {
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    background: #000;
+    margin-left: 9px;
+    top: 8px;
+    border-radius: 3px;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-name: scroll;
+  }
+
+  @keyframes scroll {
+    0% {
+      opacity: 1;
+    }
+
+    100% {
+      opacity: 0;
+      transform: translateY(22px);
+    }
+  }
+`
