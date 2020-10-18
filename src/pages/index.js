@@ -7,8 +7,8 @@ export default function Home() {
   return (
     <>
       <Meta />
-      <Box w={['100%', '80%', '600px']} mx="auto" px={['16', '0']} mt={['40px', '175px']}>
-        <Heading color="red" my="8" mb={[12, 0]}>
+      <Box w={['100%', '80%', '600px']} mx="auto" px={['16', '0']} mt={['40px', '100px']}>
+        <Heading color="red" my="8" mb={[8, 0]} mt={[16, 0]}>
           To design is to
           <Text display="inline" color="primaryBlack">
             {' '}
@@ -23,7 +23,7 @@ export default function Home() {
           is a Londond based technical product designer, raving about the connection between human
           psychology, business and design.
         </Text>
-        <HStack spacing="4" mt={['50px', '150px']}>
+        <HStack spacing="4" mt={['50px', '80px']}>
           <MouseIcon width="20px" />
           <Text fontSize={['md', 'xl']}>Scroll to explore projects</Text>
         </HStack>
