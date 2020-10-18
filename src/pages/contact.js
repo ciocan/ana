@@ -46,23 +46,11 @@ export default function Home() {
           let’s talk. Reach out by hitting the button below.
         </Text>
         <Link
-          color="primaryBlack"
-          borderColor="primaryBlack"
-          borderStyle="solid"
-          borderWidth="1px"
-          borderRadius="65px"
-          display="inline-block"
+          variant="button"
           mt="8"
-          px="10"
-          py="3"
           rel="nofollow"
           target="_blank"
           href="mailto:hello@anastate.com"
-          textDecoration="none"
-          _hover={{
-            textDecoration: 'none',
-            fontWeight: 'bold',
-          }}
         >
           Contact me
         </Link>

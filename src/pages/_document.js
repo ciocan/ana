@@ -56,7 +56,7 @@ export default class MyDocument extends Document {
             }}
           />
         </Head>
-        <body className="custom_class">
+        <body>
           <Main />
           <NextScript />
         </body>

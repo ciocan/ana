@@ -45,12 +45,10 @@ export default function Home() {
               Research, analytics and usability testing are tools I use to understand user behaviour
               and design interfaces & experiences that convert well.
             </HelpBox>
-
             <HelpBox title="Design">
               I am a huge proponent of wireframing & prototyping at all project stages to validate
               designs and iterate fast for different touchpoints.
             </HelpBox>
-
             <HelpBox title="Webflow Development">
               Using Webflow, I’m able to build well-thought-out interfaces, bringing together visual
               design, development and clean production-ready code.
