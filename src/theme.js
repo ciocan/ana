@@ -45,8 +45,8 @@ const components = {
         borderColor: 'primaryBlack',
         borderStyle: 'solid',
         borderWidth: '1px',
-        borderRadius: '65px',
-        px: 8,
+        borderRadius: '60px',
+        px: 6,
         py: '3',
         _hover: {
           textDecoration: 'none',

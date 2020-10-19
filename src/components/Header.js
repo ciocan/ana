@@ -4,6 +4,8 @@ import { useRouter } from 'next/router'
 import styled from 'styled-components'
 
 const Logo = styled(Box)`
+  cursor: pointer;
+
   @media only screen and (min-width: 800px) {
     transform: rotateY(0deg) rotate(-90deg);
     position: absolute;
@@ -13,25 +15,28 @@ const Logo = styled(Box)`
     transform: rotateY(0deg) rotate(-90deg);
     position: absolute;
     left: 40px;
+    top: 20px;
 
     & :before {
-      border-top: 1px solid #aeaba5;
+      border-top: 1px solid #102443;
+      filter: opacity(0.5);
       position: absolute;
       content: '';
-      left: -480px;
+      left: -540px;
       top: -15px;
       height: 1px;
-      width: 600px;
+      width: 800px;
     }
 
     & :after {
-      border-bottom: 1px solid #aeaba5;
+      border-bottom: 1px solid #102443;
+      filter: opacity(0.5);
       position: absolute;
       content: '';
-      left: -400px;
+      left: -470px;
       top: 50px;
       height: 1px;
-      width: 520px;
+      width: 620px;
     }
   }
 `

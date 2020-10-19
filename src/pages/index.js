@@ -13,10 +13,10 @@ export default function Home() {
         px={['16', '0']}
         mx="auto"
         alignItems="flex-start"
-        justifyContent="space-between"
+        justifyContent="center"
         pos="relative"
       >
-        <Heading color="red" mb="8" mt="auto">
+        <Heading fontSize="42px" color="red" mb="8" mt="-20">
           To design is to
           <Text display="inline" color="primaryBlack">
             {' '}
@@ -24,14 +24,14 @@ export default function Home() {
           </Text>{' '}
           people.
         </Heading>
-        <Text fontSize="xl" my="6" mb="auto">
+        <Text fontSize="xl" my="6" mb={[16, 20]}>
           <Text as="span" fontWeight="bold" display="inline" color="red">
             Ana
           </Text>{' '}
           is a Londond based technical product designer, raving about the connection between human
           psychology, business and design.
         </Text>
-        <HStack justifySelf="flex-end" mt="auto" mb={[40, 20]}>
+        <HStack>
           <MouseScroll />
           <Text fontSize={['md', 'xl']}>Scroll to explore projects</Text>
         </HStack>
@@ -92,11 +92,11 @@ const Project = ({ imageUrl, type, name, description, url, variant = 'left' }) =
         mt={['20px', 0]}
       >
         <Text color="grey">{type}</Text>
-        <Heading mb="5" fontSize="4xl">
+        <Heading mb="3" fontSize="4xl">
           {name}
         </Heading>
         <Text mb={[10, '60px']}>{description}</Text>
-        <ProjectLink href={url}>See Project</ProjectLink>
+        <ProjectLink href={url}>See project</ProjectLink>
       </VStack>
       <Box position="relative" right={[0, '-22px']}>
         <Image
@@ -119,7 +119,7 @@ const Project = ({ imageUrl, type, name, description, url, variant = 'left' }) =
           {name}
         </Heading>
         <Text mb={[10, '60px']}>{description}</Text>
-        <ProjectLink href={url}>See Project</ProjectLink>
+        <ProjectLink href={url}>See project</ProjectLink>
       </VStack>
     </Stack>
   )
