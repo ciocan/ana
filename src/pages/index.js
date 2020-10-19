@@ -46,14 +46,14 @@ export default function Home() {
           name="Web app integration"
           description="Drive user aquisition through web integration of a Fintech mobile app and a Payroll
               provider app."
-          imageUrl="/images/phone1.png"
+          imageUrl="/images/phone1.webp"
           url="/work/web-integration"
         />
         <Project
           type="Fintech startup"
           name="Design system"
           description="Building design principles and a visual system for an evolving product ecosystem."
-          imageUrl="/images/desktop1.png"
+          imageUrl="/images/desktop1.webp"
           url="/work/design-system"
           variant="right"
         />
@@ -61,14 +61,14 @@ export default function Home() {
           type="eSecurity"
           name="Mobile app redesign"
           description="A project focused on redesigning the onboarding experience of a security banking  app."
-          imageUrl="/images/phone2.png"
+          imageUrl="/images/phone2.webp"
           url="/work/mobile-app-redesign"
         />
         <Project
           type="Research"
           name="Sales meets research"
           description="Redesign internal tools for a better cross-selling process."
-          imageUrl="/images/desktop2.png"
+          imageUrl="/images/desktop2.webp"
           url="/work/sales-meet-research"
           variant="right"
         />

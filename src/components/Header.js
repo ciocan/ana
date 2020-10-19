@@ -4,33 +4,32 @@ import { useRouter } from 'next/router'
 import styled from 'styled-components'
 
 const Logo = styled(Box)`
+  @media only screen and (min-width: 800px) {
+    transform: rotateY(0deg) rotate(-90deg);
+    position: absolute;
+  }
+
   @media only screen and (min-width: 1200px) {
     transform: rotateY(0deg) rotate(-90deg);
-    padding-top: 20px;
-    padding-bottom: 44px;
-    padding-right: 60px;
-    margin-right: 0;
     position: absolute;
-    margin-right: auto;
-    left: 50px;
-    top: -14px;
+    left: 40px;
 
     & :before {
       border-top: 1px solid #aeaba5;
-      content: '';
       position: absolute;
-      left: -500px;
-      top: 0;
+      content: '';
+      left: -480px;
+      top: -15px;
       height: 1px;
       width: 600px;
     }
 
     & :after {
       border-bottom: 1px solid #aeaba5;
-      content: '';
       position: absolute;
-      left: -420px;
-      top: 80px;
+      content: '';
+      left: -400px;
+      top: 50px;
       height: 1px;
       width: 520px;
     }
@@ -46,14 +45,14 @@ export function Header() {
       position="relative"
       fontSize={['xs', 'md']}
     >
-      <Box marginRight="auto">
+      <Box marginRight="auto" pos="relative">
         <NextLink href="/">
-          <a>
+          <Box as="a" py={[2, 0]}>
             <Logo mr="auto" as="span">
               <Text as="b">ana</Text>
               <Text as="span">state</Text>
             </Logo>
-          </a>
+          </Box>
         </NextLink>
       </Box>
       <HStack spacing={[4, 8]} textTransform="uppercase">
@@ -76,6 +75,7 @@ const Link = ({ title, to }) => {
         as="a"
         _hover={{ textDecoration: 'underline', cursor: 'pointer', color: 'red' }}
         variant={selected}
+        py={[2, 0]}
       >
         {title}
       </Text>
