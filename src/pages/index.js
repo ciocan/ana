@@ -16,7 +16,7 @@ export default function Home() {
         justifyContent="center"
         pos="relative"
       >
-        <Heading fontSize="42px" color="red" mb="8" mt="-20">
+        <Heading fontSize={['36px', '42px']} color="red" mb="8" mt="-20">
           To design is to
           <Text display="inline" color="primaryBlack">
             {' '}
@@ -46,7 +46,7 @@ export default function Home() {
           name="Web app integration"
           description="Drive user aquisition through web integration of a Fintech mobile app and a Payroll
               provider app."
-          imageUrl="/images/phone1.webp"
+          imageUrl="/images/phone1"
           url="/work/web-integration"
         />
         <Project
@@ -100,12 +100,15 @@ const Project = ({ imageUrl, type, name, description, url, variant = 'left' }) =
       </VStack>
       <Box position="relative" right={[0, '-22px']}>
         <Image
-          src={imageUrl}
+          src={`${imageUrl}.webp`}
+          fallbackSrc={`${imageUrl}.png`}
           fit="fit"
           alt={name}
           ml={[-2, 0]}
           transform={['scale(1.3)', 'scale(1.2)']}
         />
+
+        {/* <Picture src={imageUrl} ml={[-2, 0]} transform={['scale(1.3)', 'scale(1.2)']} /> */}
       </Box>
     </Stack>
   ) : (
@@ -124,6 +127,16 @@ const Project = ({ imageUrl, type, name, description, url, variant = 'left' }) =
     </Stack>
   )
 }
+
+// const Picture = ({ url, ...props }) => (
+//   <Box {...props}>
+//     <picture>
+//       <source type="image/webp" srcSet={`${url}.webp`} />
+//       <source type="image/png" srcSet={`${url}.png`} />
+//       <img src={`${url}.png`} />
+//     </picture>
+//   </Box>
+// )
 
 const ProjectLink = ({ href, children }) => (
   <HStack as={Link} href={href} variant="button">
