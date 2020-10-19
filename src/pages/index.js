@@ -53,7 +53,7 @@ export default function Home() {
           type="Fintech startup"
           name="Design system"
           description="Building design principles and a visual system for an evolving product ecosystem."
-          imageUrl="/images/desktop1.webp"
+          imageUrl="/images/desktop1"
           url="/work/design-system"
           variant="right"
         />
@@ -61,14 +61,14 @@ export default function Home() {
           type="eSecurity"
           name="Mobile app redesign"
           description="A project focused on redesigning the onboarding experience of a security banking  app."
-          imageUrl="/images/phone2.webp"
+          imageUrl="/images/phone2"
           url="/work/mobile-app-redesign"
         />
         <Project
           type="Research"
           name="Sales meets research"
           description="Redesign internal tools for a better cross-selling process."
-          imageUrl="/images/desktop2.webp"
+          imageUrl="/images/desktop2"
           url="/work/sales-meet-research"
           variant="right"
         />
@@ -98,7 +98,7 @@ const Project = ({ imageUrl, type, name, description, url, variant = 'left' }) =
         <Text mb={[10, '60px']}>{description}</Text>
         <ProjectLink href={url}>See project</ProjectLink>
       </VStack>
-      <Box position="relative" right={[0, '-22px']}>
+      <Box position="relative" right={[0, '-32px']}>
         <Image
           src={`${imageUrl}.webp`}
           fallbackSrc={`${imageUrl}.png`}
@@ -107,18 +107,22 @@ const Project = ({ imageUrl, type, name, description, url, variant = 'left' }) =
           ml={[-2, 0]}
           transform={['scale(1.3)', 'scale(1.2)']}
         />
-
-        {/* <Picture src={imageUrl} ml={[-2, 0]} transform={['scale(1.3)', 'scale(1.2)']} /> */}
       </Box>
     </Stack>
   ) : (
     <Stack direction={['column', 'row']} justifyContent="space-between" mb={['120px', '180px']}>
       <Box pr={[0, 20]} mb={[10, 0]} ml={[0, '-70px']}>
-        <Image src={imageUrl} fit="fit" alt={name} transform={['scale(1.3)', 'scale(1)']} />
+        <Image
+          src={`${imageUrl}.webp`}
+          fallbackSrc={`${imageUrl}.png`}
+          fit="fit"
+          alt={name}
+          transform={['scale(1.3)', 'scale(1)']}
+        />
       </Box>
       <VStack alignItems="flex-start" justifyContent="center" w={['100%', '40%']}>
         <Text color="grey">{type}</Text>
-        <Heading mb="5" fontSize="4xl">
+        <Heading mb="3" fontSize="4xl">
           {name}
         </Heading>
         <Text mb={[10, '60px']}>{description}</Text>
@@ -127,16 +131,6 @@ const Project = ({ imageUrl, type, name, description, url, variant = 'left' }) =
     </Stack>
   )
 }
-
-// const Picture = ({ url, ...props }) => (
-//   <Box {...props}>
-//     <picture>
-//       <source type="image/webp" srcSet={`${url}.webp`} />
-//       <source type="image/png" srcSet={`${url}.png`} />
-//       <img src={`${url}.png`} />
-//     </picture>
-//   </Box>
-// )
 
 const ProjectLink = ({ href, children }) => (
   <HStack as={Link} href={href} variant="button">
