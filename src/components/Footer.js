@@ -34,7 +34,7 @@ export const Footer = () => (
             Email
           </a>
           <a
-            href="Senior_Product Designer_Resume_Ana_State.pdf"
+            href="Senior_Product_Designer_Resume_Ana_State.pdf"
             target="_blank"
             aria-label="PDF Resume"
           >
