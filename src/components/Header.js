@@ -3,6 +3,8 @@ import NextLink from 'next/link'
 import { useRouter } from 'next/router'
 import styled from 'styled-components'
 
+import { mainRoutes } from '@lib/etc'
+
 const Logo = styled(Box)`
   cursor: pointer;
 
@@ -17,31 +19,38 @@ const Logo = styled(Box)`
     left: 40px;
     top: 20px;
 
-    & :before {
-      border-top: 1px solid #102443;
-      filter: opacity(0.5);
-      position: absolute;
-      content: '';
-      left: -540px;
-      top: -15px;
-      height: 1px;
-      width: 800px;
-    }
+    ${({ isWork }) =>
+      !isWork &&
+      `
+      & :before {
+        border-top: 1px solid #102443;
+        filter: opacity(0.5);
+        position: absolute;
+        content: '';
+        left: -540px;
+        top: -15px;
+        height: 1px;
+        width: 800px;
+      }
 
-    & :after {
-      border-bottom: 1px solid #102443;
-      filter: opacity(0.5);
-      position: absolute;
-      content: '';
-      left: -470px;
-      top: 50px;
-      height: 1px;
-      width: 620px;
-    }
+      & :after {
+        border-bottom: 1px solid #102443;
+        filter: opacity(0.5);
+        position: absolute;
+        content: '';
+        left: -470px;
+        top: 50px;
+        height: 1px;
+        width: 620px;
+      }
+    `}
   }
 `
 
 export function Header() {
+  const { route } = useRouter()
+  const isWork = route.includes('/work/')
+
   return (
     <HStack
       justifyContent="flex-end"
@@ -53,7 +62,7 @@ export function Header() {
       <Box marginRight="auto" pos="relative">
         <NextLink href="/">
           <Box as="a" py={[2, 0]}>
-            <Logo mr="auto" as="span">
+            <Logo mr="auto" as="span" isWork={isWork}>
               <Text as="b">ana</Text>
               <Text as="span">state</Text>
             </Logo>
@@ -70,9 +79,8 @@ export function Header() {
 }
 
 const Link = ({ title, to }) => {
-  const router = useRouter()
-  const selected =
-    router.asPath === to || (router.asPath === '/' && to === '/#work') ? 'selected' : ''
+  const { route } = useRouter()
+  const selected = route === to ? 'selected' : ''
 
   return (
     <NextLink href={to}>

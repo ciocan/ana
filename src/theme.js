@@ -1,13 +1,5 @@
 import { extendTheme } from '@chakra-ui/core'
 
-const styles = {
-  global: {
-    body: {
-      bg: 'homeBg',
-    },
-  },
-}
-
 const fonts = {
   body: 'tex_gyre_adventor_regular',
 }
@@ -58,7 +50,6 @@ const components = {
 }
 
 const appTheme = extendTheme({
-  styles,
   fonts,
   colors,
   components,

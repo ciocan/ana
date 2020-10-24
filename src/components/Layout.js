@@ -3,8 +3,10 @@ import Head from 'next/head'
 import { Grid, Flex } from '@chakra-ui/core'
 
 import { Footer, Header } from '@components'
+import { useBackground } from '@hooks'
 
 export function Layout({ children }) {
+  const bg = useBackground()
   return (
     <>
       <Head>
@@ -15,6 +17,7 @@ export function Layout({ children }) {
         gridTemplateRows="auto 1fr auto"
         gridTemplateColumns="100%"
         minHeight="100vh"
+        bg={bg}
       >
         <Header />
         <Flex as="main" direction="column" justifyContent="flex-start">

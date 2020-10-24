@@ -1,6 +1,8 @@
-import { Meta } from '@components'
 import { Box, Heading, HStack, Text, Image, VStack, Stack, Link } from '@chakra-ui/core'
 import styled from 'styled-components'
+import NextLink from 'next/link'
+
+import { Meta } from '@components'
 import ArrowIcon from '../svg/arrow.svg'
 
 export default function Home() {
@@ -133,10 +135,12 @@ const Project = ({ imageUrl, type, name, description, url, variant = 'left' }) =
 }
 
 const ProjectLink = ({ href, children }) => (
-  <HStack as={Link} href={href} variant="button">
-    <Text mr="2">{children}</Text>
-    <ArrowIcon width="20px" />
-  </HStack>
+  <NextLink href={href}>
+    <HStack as={Link} variant="button">
+      <Text mr="2">{children}</Text>
+      <ArrowIcon width="20px" />
+    </HStack>
+  </NextLink>
 )
 
 const MouseScroll = styled.div`
