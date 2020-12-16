@@ -45,6 +45,34 @@ export default class MyDocument extends Document {
           <meta name="apple-mobile-web-app-capable" content="yes" />
           <link rel="apple-touch-startup-image" href="/ana.png" />
 
+          <link
+            rel="preload"
+            href="/fonts/texgyreadventor-regular-webfont.woff"
+            as="font"
+            type="font/woff"
+            crossOrigin=""
+          />
+          <link
+            rel="preload"
+            href="/fonts/texgyreadventor-italic-webfont.woff"
+            as="font"
+            type="font/woff"
+            crossOrigin=""
+          />
+          <link
+            rel="preload"
+            href="/fonts/texgyreadventor-bold-webfont.woff"
+            as="font"
+            type="font/woff"
+            crossOrigin=""
+          />
+          <link
+            rel="preload"
+            href="/fonts/texgyreadventor-bolditalic-webfont.woff"
+            as="font"
+            type="font/woff"
+            crossOrigin=""
+          />
           <script
             dangerouslySetInnerHTML={{
               __html: `
@@ -52,6 +80,33 @@ export default class MyDocument extends Document {
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
             gtag('config', '${GA_TRACKING_ID}');
+          `,
+            }}
+          />
+          <style
+            dangerouslySetInnerHTML={{
+              __html: `
+                      @font-face {
+                        font-family: 'tex_gyre_adventor_regular';
+                        src: url('/fonts/texgyreadventor-regular-webfont.woff') format('woff');
+                        font-display: fallback;
+                      }
+                      @font-face {
+                        font-family: 'tex_gyre_adventor_italic';
+                        src: url('/fonts/texgyreadventor-italic-webfont.woff') format('woff');
+                        font-display: fallback;
+                      }
+                      @font-face {
+                        font-family: 'tex_gyre_adventor_bold';
+                        src: url('/fonts/texgyreadventor-bold-webfont.woff') format('woff');
+                        font-display: fallback;
+                      }
+                      @font-face {
+                        font-family: 'tex_gyre_adventor_bold_italic';
+                        src: url('/fonts/texgyreadventor-bolditalic-webfont.woff') format('woff');
+                        font-display: fallback;
+                      }
+          
           `,
             }}
           />

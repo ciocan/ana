@@ -1,24 +1,27 @@
-import { Box, Heading, HStack, Text, Image, VStack, Stack, Link } from '@chakra-ui/core'
-import styled from 'styled-components'
-import NextLink from 'next/link'
-
+import { Box, Grid, Heading, HStack, Link, Stack, Text, VStack } from '@chakra-ui/core'
 import { Meta } from '@components'
+import Image from 'next/image'
+import NextLink from 'next/link'
+import styled from 'styled-components'
 import ArrowIcon from '../svg/arrow.svg'
 
 export default function Home() {
   return (
     <>
       <Meta title="Technical Product Designer | Ana State" />
-      <VStack
+      <Grid
         w={['100%', '80%', '600px']}
         h={['calc(100vh - 50px)', 'calc(100vh - 120px)']}
         px={['16', '0']}
         mx="auto"
+        pt={['80px', '160px']}
+        pb={['150px', '60px']}
         alignItems="flex-start"
         justifyContent="center"
         pos="relative"
+        templateRows="1fr 9fr"
       >
-        <Heading fontSize={['36px', '42px']} color="red" mb="8" mt="-20">
+        <Heading fontSize={['36px', '42px']} color="red" mb="8" mt="0">
           To design is to
           <Text display="inline" color="primaryBlack">
             {' '}
@@ -26,7 +29,7 @@ export default function Home() {
           </Text>{' '}
           people.
         </Heading>
-        <Text fontSize="xl" my="6" mb={[16, 20]}>
+        <Text fontSize="xl" my="6">
           <Text as="span" fontWeight="bold" display="inline" color="red">
             Ana
           </Text>{' '}
@@ -37,8 +40,9 @@ export default function Home() {
           <MouseScroll />
           <Text fontSize={['md', 'xl']}>Scroll to explore projects</Text>
         </HStack>
-      </VStack>
-      <Box w={['100%', '1000px']} mt={[10, 20]} mb={['150px', '400px']} px={['16', '10']} mx="auto">
+      </Grid>
+
+      <Box w={['100%', '1000px']} mb={['150px', '400px']} px={['16', '10']} mx="auto">
         <Box id="work" pt="40px" />
         <Heading fontSize="6xl" mb={['80px', '120px']}>
           Work.
@@ -81,17 +85,14 @@ export default function Home() {
 
 const Project = ({ imageUrl, type, name, description, url, variant = 'left' }) => {
   return variant === 'left' ? (
-    <Stack
-      direction={['column-reverse', 'row']}
-      justifyContent="space-between"
-      mb={['120px', '180px']}
-    >
+    <Grid templateColumns={['1fr', '1fr 1fr']} mb={['120px', '180px']}>
       <VStack
         alignItems="flex-start"
         justifyContent="center"
-        w={['100%', '60%']}
         mr={[0, '60px']}
         mt={['20px', 0]}
+        pr={[0, '80px']}
+        order={[2, 1]}
       >
         <Text color="grey">{type}</Text>
         <Heading mb="3" fontSize="4xl">
@@ -100,29 +101,22 @@ const Project = ({ imageUrl, type, name, description, url, variant = 'left' }) =
         <Text mb={[10, '60px']}>{description}</Text>
         <ProjectLink href={url}>See project</ProjectLink>
       </VStack>
-      <Box position="relative" right={[0, '-32px']}>
-        <Image
-          src={`${imageUrl}.webp`}
-          fallbackSrc={`${imageUrl}.png`}
-          fit="fit"
-          alt={name}
-          ml={[-2, 0]}
-          transform={['scale(1.3)', 'scale(1.2)']}
-        />
+      <Box mr={['-55px', '-80px']} ml={['-65px', 0]} w={['400px', 'auto']} order={[1, 2]}>
+        <Image src={`${imageUrl}.webp`} alt={name} width={600} height={368} />
       </Box>
-    </Stack>
+    </Grid>
   ) : (
-    <Stack direction={['column', 'row']} justifyContent="space-between" mb={['120px', '180px']}>
-      <Box pr={[0, 20]} mb={[10, 0]} ml={[0, '-70px']}>
-        <Image
-          src={`${imageUrl}.webp`}
-          fallbackSrc={`${imageUrl}.png`}
-          fit="fit"
-          alt={name}
-          transform={['scale(1.3)', 'scale(1)']}
-        />
+    <Grid templateColumns={['1fr', '1fr 1fr']} mb={['120px', '180px']}>
+      <Box ml={['-55px', '-80px']} w={['400px', 'auto']}>
+        <Image src={`${imageUrl}.webp`} alt={name} width={600} height={368} />
       </Box>
-      <VStack alignItems="flex-start" justifyContent="center" w={['100%', '40%']}>
+      <VStack
+        alignItems="flex-start"
+        justifyContent="center"
+        mr={['55px', 0]}
+        mt={['35px', 0]}
+        pl={[0, '80px']}
+      >
         <Text color="grey">{type}</Text>
         <Heading mb="3" fontSize="4xl">
           {name}
@@ -130,7 +124,7 @@ const Project = ({ imageUrl, type, name, description, url, variant = 'left' }) =
         <Text mb={[10, '60px']}>{description}</Text>
         <ProjectLink href={url}>See project</ProjectLink>
       </VStack>
-    </Stack>
+    </Grid>
   )
 }
 

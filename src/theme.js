@@ -5,10 +5,13 @@ const fonts = {
 }
 
 const colors = {
-  homeBg: '#FDFBF6',
+  // homeBg: '#FDFBF6',
+  homeBg: '#fff',
   red: '#CE3C50',
   primaryBlack: '#102443',
   grey: '#3F3F3F',
+  lightGrey: '#979797',
+  lightBg: '#FAFAFA',
 }
 
 const components = {
@@ -16,6 +19,22 @@ const components = {
     baseStyle: {
       color: 'primaryBlack',
       fontFamily: 'tex_gyre_adventor_bold',
+    },
+    variants: {
+      project: {
+        fontSize: '2.125rem',
+        lineHeight: '2.25rem',
+      },
+      content: {
+        fontSize: '2.125rem',
+        lineHeight: '2.25rem',
+        color: '#343541',
+      },
+      small: {
+        fontSize: '1.125rem',
+        lineHeight: '2rem',
+        pb: '1rem',
+      },
     },
   },
   Text: {
@@ -25,6 +44,10 @@ const components = {
     variants: {
       selected: {
         color: 'red',
+      },
+      caption: {
+        alignSelf: 'center',
+        color: 'lightGrey',
       },
     },
   },

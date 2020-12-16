@@ -3,10 +3,10 @@ import NextLink from 'next/link'
 import { useRouter } from 'next/router'
 import styled from 'styled-components'
 
-import { mainRoutes } from '@lib/etc'
-
 const Logo = styled(Box)`
   cursor: pointer;
+  display: flex;
+  flex-direction: row;
 
   @media only screen and (min-width: 800px) {
     transform: rotateY(0deg) rotate(-90deg);
